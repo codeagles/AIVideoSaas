@@ -123,7 +123,7 @@ export const headerTools = [
 export const headerDocs = {
   id: "docs",
   title: "Docs",
-  href: "https://docs.videofly.app",
+  href: "https://docs.videomint.app",
   external: true,
 };
 

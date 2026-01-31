@@ -1,4 +1,4 @@
-# VideoFly 🎬
+# VideoMint 🎬
 
 一个生产级 AI 视频生成 SaaS 模板，基于 Next.js 15 构建，支持 Sora 2、Veo 3.1 等先进 AI 模型。
 

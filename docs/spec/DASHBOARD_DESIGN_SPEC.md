@@ -1,4 +1,4 @@
-# VideoFly 管理页 (Dashboard) 完整设计方案 V2
+# VideoMint 管理页 (Dashboard) 完整设计方案 V2
 
 > 版本: V2.0 | 最后更新: 2026-01-20 | 基于 V1.0 用户反馈修订
 

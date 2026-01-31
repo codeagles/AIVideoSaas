@@ -52,8 +52,8 @@ MagicLinkEmail.PreviewProps = {
       },
       magicLink: {
         greeting: "Hi {name},",
-        title: "Sign In to VideoFly",
-        body: "We received a request to sign in to your VideoFly account.",
+        title: "Sign In to VideoMint",
+        body: "We received a request to sign in to your VideoMint account.",
         instruction: "Click the button below to sign in:",
         button: "Sign In",
         validity: "This link will expire in 24 hours.",
@@ -63,5 +63,5 @@ MagicLinkEmail.PreviewProps = {
     },
   },
   name: "John Doe",
-  magicLink: "https://videofly.app/auth/callback?token=abc123",
+  magicLink: "https://videomint.app/auth/callback?token=abc123",
 };

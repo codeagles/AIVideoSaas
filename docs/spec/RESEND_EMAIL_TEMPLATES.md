@@ -1,6 +1,6 @@
-# VideoFly 邮件系统使用指南
+# VideoMint 邮件系统使用指南
 
-本文档说明如何使用 VideoFly 的邮件系统，包括欢迎邮件、密码重置邮件和邮件预览功能。
+本文档说明如何使用 VideoMint 的邮件系统，包括欢迎邮件、密码重置邮件和邮件预览功能。
 
 ## 快速开始
 
@@ -62,7 +62,7 @@ src/messages/
 {
   "subject": "邮件标题",
   "greeting": "Hi {name}",
-  "title": "Welcome to VideoFly!",
+  "title": "Welcome to VideoMint!",
   "body": "邮件正文",
   "features": "功能介绍标题",
   "featuresList": {
@@ -189,10 +189,10 @@ cp src/messages/en.json src/messages/ko.json
 {
   "Emails": {
     "welcome": {
-      "subject": "VideoFlyへようこそ！",
+      "subject": "VideoMintへようこそ！",
       "greeting": "{name}さん、",
-      "title": "VideoFlyへようこそ！",
-      "body": "VideoFlyにご登録いただき、ありがとうございます。",
+      "title": "VideoMintへようこそ！",
+      "body": "VideoMintにご登録いただき、ありがとうございます。",
       // ... 其他翻译
     },
     "resetPassword": {
@@ -257,7 +257,7 @@ interface WelcomeEmailProps {
 
 ## 邮件预览系统
 
-VideoFly 提供了浏览器邮件预览功能，方便开发和测试邮件模板。
+VideoMint 提供了浏览器邮件预览功能，方便开发和测试邮件模板。
 
 ### 启动预览服务器
 
@@ -292,7 +292,7 @@ const templates = [
         name="John Doe"
         locale="en"
         translations={enTranslations.newTemplate}
-        appUrl="https://videofly.app"
+        appUrl="https://videomint.app"
       />
     ),
   },
@@ -346,10 +346,10 @@ import { EmailLayout, EmailHeader, EmailButton, EmailFooter } from "@/lib/emails
 
 export const MyEmail = () => (
   <EmailLayout preview="Email Preview Text">
-    <EmailHeader appName="VideoFly" />
+    <EmailHeader appName="VideoMint" />
     <EmailText>Email content here...</EmailText>
-    <EmailButton href="https://videofly.app">Click Here</EmailButton>
-    <EmailFooter appName="VideoFly" />
+    <EmailButton href="https://videomint.app">Click Here</EmailButton>
+    <EmailFooter appName="VideoMint" />
   </EmailLayout>
 );
 ```
@@ -467,7 +467,7 @@ function getEmailTranslations(
 # .env.local
 RESEND_API_KEY="re_xxxxxxxxxxxxx"
 RESEND_FROM="noreply@yourdomain.com"
-NEXT_PUBLIC_APP_URL="https://videofly.app"
+NEXT_PUBLIC_APP_URL="https://videomint.app"
 ```
 
 ---

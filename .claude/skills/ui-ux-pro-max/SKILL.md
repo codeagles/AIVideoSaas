@@ -1,13 +1,13 @@
 ---
 name: ui-ux-pro-max
-description: "UI/UX 设计智能系统。50+ 风格, 21+ 配色, 50+ 字体搭配, 20+ 图表, 9+ 技术栈 (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui, VideoFly)。动作: 规划、构建、创建、设计、实现、审查、修复、改进、优化、增强、重构、检查 UI/UX 代码。项目类型: 网站、落地页、仪表板、管理面板、电商、SaaS、作品集、博客、移动应用、.html、.tsx、.vue、.svelte。元素: 按钮、模态框、导航栏、侧边栏、卡片、表格、表单、图表。风格: 玻璃态、粘土态、极简、野兽派、新拟态、便当网格、深色模式、响应式、拟物化、扁平化。主题: 配色方案、可访问性、动画、布局、排版、字体搭配、间距、悬停、阴影、渐变。集成: shadcn/ui MCP 组件搜索、VideoFly 组件库 (Magic UI 36+, Animate UI 6+)。**语言: 所有回复和对话必须使用中文**。"
+description: "UI/UX 设计智能系统。50+ 风格, 21+ 配色, 50+ 字体搭配, 20+ 图表, 9+ 技术栈 (React, Next.js, Vue, Svelte, SwiftUI, React Native, Flutter, Tailwind, shadcn/ui, VideoMint)。动作: 规划、构建、创建、设计、实现、审查、修复、改进、优化、增强、重构、检查 UI/UX 代码。项目类型: 网站、落地页、仪表板、管理面板、电商、SaaS、作品集、博客、移动应用、.html、.tsx、.vue、.svelte。元素: 按钮、模态框、导航栏、侧边栏、卡片、表格、表单、图表。风格: 玻璃态、粘土态、极简、野兽派、新拟态、便当网格、深色模式、响应式、拟物化、扁平化。主题: 配色方案、可访问性、动画、布局、排版、字体搭配、间距、悬停、阴影、渐变。集成: shadcn/ui MCP 组件搜索、VideoMint 组件库 (Magic UI 36+, Animate UI 6+)。**语言: 所有回复和对话必须使用中文**。"
 ---
 
 # UI/UX Pro Max - 设计智能系统
 
 全面的 Web 和移动应用设计指南。包含 50+ 风格、97 种配色方案、57 种字体搭配、99 条 UX 准则和 25 种图表类型，覆盖 9+ 技术栈的可搜索数据库，具有基于优先级的推荐功能。
 
-**VideoFly 项目默认**: Next.js 15 + React 19 + Magic UI + Animate UI + Tailwind CSS v4
+**VideoMint 项目默认**: Next.js 15 + React 19 + Magic UI + Animate UI + Tailwind CSS v4
 
 **语言设置**: 所有回复、解释、代码注释和对话必须使用**中文**
 
@@ -144,7 +144,7 @@ Extract key information from user request:
 - **Product type**: SaaS, e-commerce, portfolio, dashboard, landing page, etc.
 - **Style keywords**: minimal, playful, professional, elegant, dark mode, etc.
 - **Industry**: healthcare, fintech, gaming, education, etc.
-- **Stack**: React, Vue, Next.js, or default to **`videofly`** for VideoFly project
+- **Stack**: React, Vue, Next.js, or default to **`videofly`** for VideoMint project
 
 ### Step 2: Generate Design System (REQUIRED)
 
@@ -205,14 +205,14 @@ python3 .claude/skills/ui-ux-pro-max/scripts/search.py "<keyword>" --domain <dom
 
 ### Step 4: Stack Guidelines (Default: videofly)
 
-Get implementation-specific best practices. If working on **VideoFly project**, default to **`videofly`** stack:
+Get implementation-specific best practices. If working on **VideoMint project**, default to **`videofly`** stack:
 
 ```bash
 python3 .claude/skills/ui-ux-pro-max/scripts/search.py "<keyword>" --stack videofly
 ```
 
 **Available stacks:**
-- `videofly` - **VideoFly default** (Next.js 15 + React 19 + Magic UI + Animate UI + Tailwind CSS v4)
+- `videofly` - **VideoMint default** (Next.js 15 + React 19 + Magic UI + Animate UI + Tailwind CSS v4)
 - `nextjs` - Next.js best practices
 - `html-tailwind` - Tailwind utilities (generic)
 - `react` - React patterns
@@ -241,7 +241,7 @@ python3 .claude/skills/ui-ux-pro-max/scripts/search.py "<keyword>" --stack video
 
 | Stack | Focus |
 |-------|-------|
-| `videofly` | **VideoFly**: Next.js 15 + React 19 + Magic UI + Animate UI + Tailwind v4 |
+| `videofly` | **VideoMint**: Next.js 15 + React 19 + Magic UI + Animate UI + Tailwind v4 |
 | `nextjs` | Next.js SSR, routing, images, API routes |
 | `html-tailwind` | Tailwind utilities, responsive, a11y (generic) |
 | `react` | React state, hooks, performance, patterns |
@@ -255,9 +255,9 @@ python3 .claude/skills/ui-ux-pro-max/scripts/search.py "<keyword>" --stack video
 
 ---
 
-## VideoFly Component Library
+## VideoMint Component Library
 
-When building for VideoFly project, **prioritize existing components**:
+When building for VideoMint project, **prioritize existing components**:
 
 ### Import Path
 ```tsx
@@ -290,7 +290,7 @@ import { toast } from "sonner";
 
 ---
 
-## Example Workflow (VideoFly Project)
+## Example Workflow (VideoMint Project)
 
 **User request:** "创建视频生成页面的 UI"
 
@@ -302,7 +302,7 @@ import { toast } from "sonner";
 ### Step 2: Generate Design System
 
 ```bash
-python3 .claude/skills/ui-ux-pro-max/scripts/search.py "AI video generation SaaS modern tech" --design-system -p "VideoFly"
+python3 .claude/skills/ui-ux-pro-max/scripts/search.py "AI video generation SaaS modern tech" --design-system -p "VideoMint"
 ```
 
 ### Step 3: Get Stack Guidelines
@@ -311,7 +311,7 @@ python3 .claude/skills/ui-ux-pro-max/scripts/search.py "AI video generation SaaS
 python3 .claude/skills/ui-ux-pro-max/scripts/search.py "form validation loading" --stack videofly
 ```
 
-### Step 4: Implement with VideoFly Components
+### Step 4: Implement with VideoMint Components
 
 ```tsx
 import { Button } from "@/components/ui/button";
@@ -362,7 +362,7 @@ python3 .claude/skills/ui-ux-pro-max/scripts/search.py "fintech crypto" --design
 3. **结合多个领域** - 风格 + 排版 + 颜色 = 完整的设计系统
 4. **始终检查 UX** - 搜索 "animation"、"z-index"、"accessibility" 了解常见问题
 5. **使用栈标志** - 获取特定实现的最佳实践
-6. **对于 VideoFly** - 始终先检查现有组件，使用 `--stack videofly`
+6. **对于 VideoMint** - 始终先检查现有组件，使用 `--stack videofly`
 
 ---
 

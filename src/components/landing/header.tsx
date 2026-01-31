@@ -94,7 +94,7 @@ export function LandingHeader({ user }: { user?: User | null }) {
             href="/"
             className="flex items-center gap-2 text-xl font-semibold"
           >
-            🎬 VideoFly
+            🎬 VideoMint
           </LocaleLink>
 
           {/* Center Menu - NavigationMenu for better hover */}
@@ -270,7 +270,7 @@ export function LandingHeader({ user }: { user?: User | null }) {
             href="/"
             className="flex items-center gap-2 text-lg font-semibold"
           >
-            🎬 VideoFly
+            🎬 VideoMint
           </LocaleLink>
 
           {/* Mobile Menu */}
@@ -299,7 +299,7 @@ export function LandingHeader({ user }: { user?: User | null }) {
                       href="/"
                       className="flex items-center gap-2"
                     >
-                      🎬 VideoFly
+                      🎬 VideoMint
                     </LocaleLink>
                   </SheetTitle>
                 </SheetHeader>

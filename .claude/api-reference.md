@@ -1,4 +1,4 @@
-# VideoFly API Reference
+# VideoMint API Reference
 
 Base URL: `/api/v1`
 

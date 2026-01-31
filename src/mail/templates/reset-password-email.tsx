@@ -57,7 +57,7 @@ ResetPasswordEmail.PreviewProps = {
       resetPassword: {
         greeting: "Hi {name},",
         title: "Reset Your Password",
-        body: "We received a request to reset your password for your VideoFly account.",
+        body: "We received a request to reset your password for your VideoMint account.",
         instruction: "Click the button below to reset your password:",
         button: "Reset Password",
         validity: "This link will expire in 30 minutes and can only be used once.",
@@ -68,5 +68,5 @@ ResetPasswordEmail.PreviewProps = {
     },
   },
   name: "John Doe",
-  resetUrl: "https://videofly.app/reset-password?token=abc123",
+  resetUrl: "https://videomint.app/reset-password?token=abc123",
 };

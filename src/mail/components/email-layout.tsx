@@ -50,14 +50,14 @@ export default function EmailLayout({
             <Container className="mx-auto max-w-[560px] rounded-lg bg-white px-6 py-8 text-gray-900">
               {/* Logo/Brand */}
               <Text className="mb-8 text-center text-2xl font-bold text-gray-900">
-                VideoFly
+                VideoMint
               </Text>
 
               {children}
 
               <Hr className="my-8 border-gray-200" />
               <Text className="mt-4 text-sm text-gray-600">
-                {t("team", { name: "VideoFly" })}
+                {t("team", { name: "VideoMint" })}
               </Text>
               <Text className="text-sm text-gray-500">
                 {t("copyright", { year: new Date().getFullYear() })}

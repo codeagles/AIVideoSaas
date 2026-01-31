@@ -4,7 +4,7 @@
  * 恢复卡住的视频
  */
 
-const API_BASE = "https://videofly.app/api/v1/video";
+const API_BASE = "https://videomint.app/api/v1/video";
 const SECRET = process.env.CALLBACK_HMAC_SECRET || "your_callback_secret_for_hmac";
 
 async function checkStuckVideos() {

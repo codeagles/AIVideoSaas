@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "VideoFly - AI 视频生成平台",
+    "title": "VideoMint - AI 视频生成平台",
     "description": "使用 Sora 2、Veo 3.1 等模型在几分钟内创建惊人的 AI 视频"
   },
   "Common": {
@@ -83,7 +83,7 @@
   },
   "Showcase": {
     "badge": "亲眼见证",
-    "title": "使用 VideoFly 创作",
+    "title": "使用 VideoMint 创作",
     "subtitle": "AI 生成的精彩视频",
     "description": "探索我们社区使用 AI 视频生成创作的精彩作品。从电影级风景到产品动画，无所不能。",
     "ctaText": "准备好创作自己的杰作了吗？",
@@ -191,7 +191,7 @@
   "CTA": {
     "badge": "限时优惠",
     "title": "准备好创作精彩视频了吗？",
-    "subtitle": "加入数千名正在使用 VideoFly 的创作者",
+    "subtitle": "加入数千名正在使用 VideoMint 的创作者",
     "description": "立即开始使用我们的免费试用创建专业视频",
     "getStarted": "免费开始",
     "learnMore": "了解更多",
@@ -213,15 +213,15 @@
   },
   "FAQ": {
     "title": "常见问题",
-    "subtitle": "关于 VideoFly 模板的一切",
+    "subtitle": "关于 VideoMint 模板的一切",
     "contact": "还有其他问题？请联系我们",
     "template": {
-      "question": "什么是 VideoFly 模板？",
-      "answer": "VideoFly 是一个生产级 AI 视频生成 SaaS 模板，基于 Next.js 15、React 19 和 Drizzle ORM 构建。它包含了启动自己的 AI 视频平台所需的一切：用户认证、积分系统、AI 供应商集成、支付处理，以及可直接定制的精美 UI。"
+      "question": "什么是 VideoMint 模板？",
+      "answer": "VideoMint 是一个生产级 AI 视频生成 SaaS 模板，基于 Next.js 15、React 19 和 Drizzle ORM 构建。它包含了启动自己的 AI 视频平台所需的一切：用户认证、积分系统、AI 供应商集成、支付处理，以及可直接定制的精美 UI。"
     },
     "deployment": {
       "question": "如何部署这个模板？",
-      "answer": "VideoFly 可以部署到 Vercel、Railway 或任何 Node.js 托管平台。只需连接您的 GitHub 仓库，设置所需的环境变量，然后部署即可。模板在 /docs 文件夹中包含详细文档，指导您完成整个过程。"
+      "answer": "VideoMint 可以部署到 Vercel、Railway 或任何 Node.js 托管平台。只需连接您的 GitHub 仓库，设置所需的环境变量，然后部署即可。模板在 /docs 文件夹中包含详细文档，指导您完成整个过程。"
     },
     "aiModels": {
       "question": "支持哪些 AI 模型？",
@@ -229,7 +229,7 @@
     },
     "credits": {
       "question": "积分系统是如何工作的？",
-      "answer": "VideoFly 使用基于 FIFO 的积分系统，采用冻结/结算/释放模式。用户购买积分包或订阅，在生成视频时消耗积分。系统支持积分过期、退款和详细的交易记录。"
+      "answer": "VideoMint 使用基于 FIFO 的积分系统，采用冻结/结算/释放模式。用户购买积分包或订阅，在生成视频时消耗积分。系统支持积分过期、退款和详细的交易记录。"
     },
     "customization": {
       "question": "我可以自定义 UI 和品牌吗？",
@@ -237,14 +237,14 @@
     },
     "payment": {
       "question": "集成了哪些支付提供商？",
-      "answer": "VideoFly 以 Creem 为主要支付集成提供商，Stripe 作为备选选项。两者都支持订阅和一次性购买。支付 webhook 系统会自动将积分分配到用户账户。"
+      "answer": "VideoMint 以 Creem 为主要支付集成提供商，Stripe 作为备选选项。两者都支持订阅和一次性购买。支付 webhook 系统会自动将积分分配到用户账户。"
     }
   },
   "Footer": {
     "product": "产品",
     "company": "公司",
     "legal": "法律",
-    "copyright": "© {year} VideoFly. 保留所有权利。"
+    "copyright": "© {year} VideoMint. 保留所有权利。"
   },
   "Credits": {
     "title": "积分",
@@ -356,7 +356,7 @@
   },
   "SignInModal": {
     "signin_title": "登录您的账户",
-    "signin_subtitle": "立即开始使用 VideoFly",
+    "signin_subtitle": "立即开始使用 VideoMint",
     "privacy": "继续即表示您同意我们的服务条款和隐私政策。",
     "continue_google": "使用 Google 继续",
     "continue_email": "使用邮箱继续",
@@ -365,10 +365,10 @@
     "terms_notice": "继续即表示您同意我们的服务条款和隐私政策。"
   },
   "MainNav": {
-    "introducing": "介绍 VideoFly"
+    "introducing": "介绍 VideoMint"
   },
   "SiteFooter": {
-    "copyright": "© {currentYear} VideoFly. 保留所有权利。"
+    "copyright": "© {currentYear} VideoMint. 保留所有权利。"
   },
   "Mail": {
     "common": {
@@ -376,11 +376,11 @@
       "copyright": "© {year} 保留所有权利。"
     },
     "welcome": {
-      "subject": "欢迎加入 VideoFly！",
+      "subject": "欢迎加入 VideoMint！",
       "greeting": "您好 {name}，",
-      "title": "欢迎来到 VideoFly！",
-      "body": "感谢您注册 VideoFly！我们很高兴您的加入。",
-      "features": "使用 VideoFly，您可以：",
+      "title": "欢迎来到 VideoMint！",
+      "body": "感谢您注册 VideoMint！我们很高兴您的加入。",
+      "features": "使用 VideoMint，您可以：",
       "featuresList": {
         "generate": "在几分钟内生成精彩的 AI 视频",
         "models": "使用 Sora 2、Veo 3.1 等多种 AI 模型",
@@ -393,7 +393,7 @@
       "subject": "重置您的密码",
       "greeting": "您好 {name}，",
       "title": "重置您的密码",
-      "body": "我们收到了您重置 VideoFly 账户密码的请求。",
+      "body": "我们收到了您重置 VideoMint 账户密码的请求。",
       "instruction": "点击下方按钮重置您的密码：",
       "button": "重置密码",
       "validity": "此链接将在 30 分钟后过期，且只能使用一次。",
@@ -402,10 +402,10 @@
       "footer": "如果您没有请求此操作，请忽略此邮件。"
     },
     "magicLink": {
-      "subject": "登录 VideoFly",
+      "subject": "登录 VideoMint",
       "greeting": "您好 {name}，",
-      "title": "登录 VideoFly",
-      "body": "我们收到了您登录 VideoFly 账户的请求。",
+      "title": "登录 VideoMint",
+      "body": "我们收到了您登录 VideoMint 账户的请求。",
       "instruction": "点击下方按钮登录：",
       "button": "登录",
       "validity": "此链接将在 24 小时后过期。",
@@ -415,11 +415,11 @@
   },
   "Emails": {
     "welcome": {
-      "subject": "欢迎加入 VideoFly！",
+      "subject": "欢迎加入 VideoMint！",
       "greeting": "您好 {name}，",
-      "title": "欢迎来到 VideoFly！",
-      "body": "感谢您注册 VideoFly！我们很高兴您的加入。",
-      "features": "使用 VideoFly，您可以：",
+      "title": "欢迎来到 VideoMint！",
+      "body": "感谢您注册 VideoMint！我们很高兴您的加入。",
+      "features": "使用 VideoMint，您可以：",
       "featuresList": {
         "generate": "在几分钟内生成精彩的 AI 视频",
         "models": "使用 Sora 2、Veo 3.1 等多种 AI 模型",
@@ -427,20 +427,20 @@
       },
       "cta": "开始创作视频",
       "footer": "如果您有任何问题，欢迎随时联系我们的支持团队。",
-      "copyright": "© {year} VideoFly. 保留所有权利。"
+      "copyright": "© {year} VideoMint. 保留所有权利。"
     },
     "resetPassword": {
       "subject": "重置您的密码",
       "greeting": "您好 {name}，",
       "title": "重置您的密码",
-      "body": "我们收到了您重置 VideoFly 账户密码的请求。",
+      "body": "我们收到了您重置 VideoMint 账户密码的请求。",
       "instruction": "点击下方按钮重置您的密码：",
       "button": "重置密码",
       "validity": "此链接将在 30 分钟后过期，且只能使用一次。",
       "ignore": "如果您没有请求重置密码，可以安全地忽略此邮件。",
       "security": "出于安全考虑，此链接将在 30 分钟后过期。",
       "footer": "如果您没有请求此操作，请忽略此邮件。",
-      "copyright": "© {year} VideoFly. 保留所有权利。"
+      "copyright": "© {year} VideoMint. 保留所有权利。"
     }
   },
   "dashboard": {

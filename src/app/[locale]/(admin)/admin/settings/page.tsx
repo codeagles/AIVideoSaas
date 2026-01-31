@@ -38,7 +38,7 @@ export default function AdminSettingsPage() {
               </div>
             </div>
             <Button asChild className="w-full">
-              <a href="https://docs.videofly.app" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.videomint.app" target="_blank" rel="noopener noreferrer">
                 <FileText className="h-4 w-4 mr-2" />
                 查看配置文档
                 <ExternalLink className="h-4 w-4 ml-2" />
@@ -72,7 +72,7 @@ export default function AdminSettingsPage() {
               </div>
             </div>
             <Button asChild variant="outline" className="w-full">
-              <a href="https://docs.videofly.app" target="_blank" rel="noopener noreferrer">
+              <a href="https://docs.videomint.app" target="_blank" rel="noopener noreferrer">
                 <FileText className="h-4 w-4 mr-2" />
                 查看快速开始
                 <ExternalLink className="h-4 w-4 ml-2" />
