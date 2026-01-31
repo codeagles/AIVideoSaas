@@ -1,0 +1,100 @@
+/**
+ * ============================================
+ * 现代蓝色主题 - Modern Blue Theme
+ * ============================================
+ *
+ * 这是一个适合 AI/科技产品的现代蓝色主题
+ * 修复了白色边框问题，增加了品牌感
+ *
+ * 使用方法：
+ * 1. 将此文件内容复制到 globals.css 的 :root 和 .dark 中
+ * 2. 或者直接导入此文件到 layout.tsx
+ */
+
+:root {
+  /* ===== 基础颜色 ===== */
+  --background: 0deg 0% 100%;
+  --foreground: 222.2deg 47.4% 11.2%;
+
+  /* ===== 边框（修复白色边框问题）===== */
+  --border: 210deg 20% 88%;           /* 柔和的灰蓝色，不那么刺眼 */
+  --input: 210deg 20% 88%;
+
+  /* ===== 卡片 ===== */
+  --card: 0deg 0% 100%;
+  --card-foreground: 222.2deg 47.4% 11.2%;
+
+  /* ===== 主色调（蓝色品牌色）===== */
+  --primary: 217deg 91% 60%;          /* 现代蓝 */
+  --primary-foreground: 0deg 0% 100%;
+
+  /* ===== 次要色调 ===== */
+  --secondary: 210deg 40% 96.1%;
+  --secondary-foreground: 222.2deg 47.4% 11.2%;
+
+  /* ===== 柔和背景 ===== */
+  --muted: 210deg 20% 96%;
+  --muted-foreground: 215deg 16% 47%;
+
+  /* ===== 强调色 ===== */
+  --accent: 210deg 20% 96%;
+  --accent-foreground: 222.2deg 47.4% 11.2%;
+
+  /* ===== 弹出层 ===== */
+  --popover: 0deg 0% 100%;
+  --popover-foreground: 222.2deg 47.4% 11.2%;
+
+  /* ===== 警告/危险 ===== */
+  --destructive: 0deg 84% 60%;
+  --destructive-foreground: 0deg 0% 98%;
+
+  /* ===== 焦点环 ===== */
+  --ring: 217deg 91% 60%;
+
+  /* ===== 圆角 ===== */
+  --radius: 0.625rem;                 /* 稍大的圆角，更现代 */
+}
+
+.dark {
+  /* ===== 基础颜色 ===== */
+  --background: 222deg 47% 11%;       /* 深蓝色背景，而非纯黑 */
+  --foreground: 210deg 40% 98%;
+
+  /* ===== 边框（暗色模式）===== */
+  --border: 217deg 33% 17%;           /* 深蓝色边框，与背景协调 */
+  --input: 217deg 33% 20%;
+
+  /* ===== 卡片 ===== */
+  --card: 217deg 33% 14%;             /* 稍浅于背景 */
+  --card-foreground: 210deg 40% 98%;
+
+  /* ===== 主色调 ===== */
+  --primary: 217deg 91% 70%;          /* 更亮的蓝色 */
+  --primary-foreground: 222deg 47% 11%;
+
+  /* ===== 次要色调 ===== */
+  --secondary: 217deg 33% 17%;
+  --secondary-foreground: 210deg 40% 98%;
+
+  /* ===== 柔和背景 ===== */
+  --muted: 217deg 33% 17%;
+  --muted-foreground: 215deg 20% 65%;
+
+  /* ===== 强调色 ===== */
+  --accent: 217deg 33% 17%;
+  --accent-foreground: 210deg 40% 98%;
+
+  /* ===== 弹出层 ===== */
+  --popover: 217deg 33% 14%;
+  --popover-foreground: 210deg 40% 98%;
+
+  /* ===== 警告/危险 ===== */
+  --destructive: 0deg 63% 42%;
+  --destructive-foreground: 210deg 40% 98%;
+
+  /* ===== 焦点环 ===== */
+  --ring: 217deg 91% 70%;
+
+  /* ===== 圆角 ===== */
+  --radius: 0.625rem;
+}

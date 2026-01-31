@@ -1,0 +1,349 @@
+---
+title: Configuration Guide
+description: How to configure pricing, credits, AI models, and admin access in VideoFly.
+---
+
+# Configuration Guide
+
+This guide explains how to configure pricing, credits, AI models, and admin access in VideoFly.
+
+<Callout>
+
+All configuration is centralized in `src/config/pricing-user.ts`. You only need to modify this file.
+
+</Callout>
+
+## Admin Access Setup
+
+### Setting Up Admin User
+
+Add your email to `.env.local`:
+
+```env
+ADMIN_EMAIL="your-email@example.com"
+```
+
+After logging in with that email, the system automatically grants admin permissions.
+
+### Admin Dashboard
+
+Access the admin dashboard at:
+- **English**: `https://your-domain.com/en/admin`
+- **中文**: `https://your-domain.com/zh/admin`
+
+<Callout type="warning">
+
+**Security Notice**: Admin tools should only be used in development/testing environments. Protect these endpoints in production.
+
+</Callout>
+
+#### Admin Features:
+
+- **Dashboard**: Overview of users, videos, and system statistics
+- **Users Management**: View all users, their credits, and video counts
+- **Settings**: Quick links to configuration documentation
+
+---
+
+## File Location
+
+```
+src/config/pricing-user.ts
+```
+
+## Configuration Overview
+
+| Section | Description |
+|---------|-------------|
+| **基础设置** | New user gifts, credit expiration rules |
+| **订阅产品** | Monthly/yearly subscription plans |
+| **积分包** | One-time credit packages |
+| **模型计费** | AI model credit consumption rules |
+
+## Basic Settings
+
+### New User Gift
+
+Credits given to new users upon registration:
+
+```typescript
+export const NEW_USER_GIFT = {
+  enabled: true,        // Enable/disable gift
+  credits: 50,          // Number of credits
+  validDays: 30,        // Validity period (days)
+};
+```
+
+### Credit Expiration
+
+```typescript
+export const CREDIT_EXPIRATION = {
+  subscriptionDays: 30,    // Subscription credits (days)
+  purchaseDays: 365,       // One-time purchase credits (days)
+  warnBeforeDays: 7,       // For future notification system
+};
+```
+
+## Subscription Products
+
+### Monthly Plans
+
+```typescript
+{
+  id: "pro_monthly",
+  name: "Pro Plan",
+  priceUsd: 29.9,      // Price in USD (not cents!)
+  credits: 500,        // Credits per billing cycle
+  period: "month",     // "month" or "year"
+  popular: true,       // Highlight as recommended
+  enabled: true,       // Enable/disable this plan
+}
+```
+
+### Yearly Plans
+
+```typescript
+{
+  id: "pro_yearly",
+  name: "Pro Plan (Yearly)",
+  priceUsd: 299,       // 12 × monthly price
+  credits: 6000,       // 500 × 12 months
+  period: "year",
+  popular: true,
+  enabled: true,
+}
+```
+
+## Credit Packages
+
+One-time purchase credit packages:
+
+```typescript
+{
+  id: "standard",
+  name: "Standard Pack",
+  priceUsd: 19.9,
+  credits: 300,
+  popular: true,
+  enabled: true,
+  // Allow free users to purchase?
+  allowFreeUser: false,  // true = all users, false = subscribers only
+}
+```
+
+### Adding a New Package
+
+```typescript
+{
+  id: "large",
+  name: "Large Pack",
+  priceUsd: 49.9,
+  credits: 1000,
+  popular: false,
+  enabled: true,
+  allowFreeUser: true,   // All users can purchase
+}
+```
+
+## AI Model Pricing
+
+Configure credit consumption for each AI model:
+
+```typescript
+"sora-2": {
+  baseCredits: 10,      // Base credits (e.g., 10 seconds)
+  perSecond: 2,         // Additional credits per second
+  enabled: true,        // Enable/disable this model
+}
+```
+
+### Pricing Examples
+
+**Sora 2** - Linear pricing:
+```typescript
+baseCredits: 10,   // 10s = 10 credits
+perSecond: 2,      // 15s = 10 + (5 × 2) = 20 credits
+```
+
+**Wan 2.6** - With quality multiplier:
+```typescript
+baseCredits: 156,          // 5s 720p = 156 credits
+perSecond: 78,             // Each extra second = 78 credits
+qualityMultiplier: 1.67,   // 1080p = 720p × 1.67
+```
+
+**Veo 3.1** - Flat rate:
+```typescript
+baseCredits: 60,   // Fixed 60 credits (not duration-based)
+perSecond: 0,
+```
+
+## Tips
+
+1. **Prices are in USD** - Use `29.9` for $29.90, not `2990` cents
+2. **Save changes** - Next.js automatically reloads the config
+3. **Disable products** - Set `enabled: false` instead of deleting
+4. **Don't change IDs** - IDs are used for database relationships
+
+## Common Tasks
+
+### Change subscription price
+
+```typescript
+// In SUBSCRIPTION_PRODUCTS array
+{
+  id: "pro_monthly",
+  priceUsd: 39.9,  // ← Change this
+  // ... keep other fields unchanged
+}
+```
+
+### Add a new credit package
+
+```typescript
+// In CREDIT_PACKAGES array
+{
+  id: "starter",
+  name: "Starter Pack",
+  priceUsd: 9.9,
+  credits: 100,
+  popular: false,
+  enabled: true,
+  allowFreeUser: true,
+}
+```
+
+### Change new user gift
+
+```typescript
+export const NEW_USER_GIFT = {
+  enabled: true,
+  credits: 100,  // ← Change from 50 to 100
+  validDays: 30,
+};
+```
+
+### Disable a model
+
+```typescript
+"wan2.6": {
+  // ... keep pricing
+  enabled: false,  // ← Set to false to disable
+}
+```
+
+---
+
+## Testing & Admin Tools
+
+### Setting Up Admin
+
+**Step 1:** Add your email to `.env.local`:
+```env
+ADMIN_EMAIL="your-email@example.com"
+```
+
+**Step 2:** Login with that email
+
+**Step 3:** Access the admin dashboard at `/[locale]/admin`
+
+### Method 1: Command Line Scripts (For Testing)
+
+These scripts are useful for adding credits without using the UI.
+
+#### Add Credits Script
+
+```bash
+pnpm script:add-credits <email> <credits> [reason]
+```
+
+**Examples:**
+```bash
+# Add 100 credits to yourself
+pnpm script:add-credits admin@example.com 100
+
+# Add 500 credits to a user with a note
+pnpm script:add-credits user@example.com 500 "Admin bonus"
+
+# Add 1000 credits for testing
+pnpm script:add-credits test@example.com 1000 "Test credits"
+```
+
+#### Check User Credits
+
+```bash
+pnpm script:check-credits <email>
+```
+
+**Example:**
+```bash
+pnpm script:check-credits admin@example.com
+```
+
+**Output includes:**
+- User information
+- All credit packages
+- Total statistics (total, used, frozen, available)
+- Recent transaction history (last 10)
+
+#### Reset User Credits (Be Careful!)
+
+```bash
+pnpm script:reset-credits <email> --confirm
+```
+
+**⚠️ Warning:** This operation is irreversible! It deletes all credit packages and transaction records.
+
+---
+
+### Method 2: Admin Dashboard
+
+Access the admin dashboard to:
+- View system statistics (users, videos, success rates)
+- Manage users (view credits, video counts)
+- Quick access to configuration documentation
+
+### Method 3: Admin API (For Browser Console)
+
+**Endpoint:** `POST /api/v1/admin/credits/add`
+
+**Authentication:** Requires admin role (`isAdmin: true`)
+
+**Request Body:**
+```json
+{
+  "credits": 100,
+  "userId": "optional-user-id",
+  "expiryDays": 365,
+  "remark": "Test credits"
+}
+```
+
+| Field | Type | Required | Description |
+|-------|------|----------|-------------|
+| `credits` | number | ✅ Yes | Amount of credits to add (must be > 0) |
+| `userId` | string | No | Target user ID (defaults to current admin user) |
+| `expiryDays` | number | No | Credit validity period (default: 365) |
+| `remark` | string | No | Transaction note |
+
+#### Using Browser Console
+
+After logging in as admin:
+
+```javascript
+// Add credits to current user
+await fetch('/api/v1/admin/credits/add', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  credentials: 'include',
+  body: JSON.stringify({ credits: 100, remark: 'Test' })
+})
+```
+
+---
+
+<Callout type="warning">
+
+**Security Notice:** Admin tools should only be used in development/testing environments. Disable or protect these endpoints in production.
+
+</Callout>

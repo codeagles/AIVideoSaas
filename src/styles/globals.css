@@ -1,0 +1,589 @@
+/**
+ * ============================================
+ * VideoFly 全局样式 - 主题配置
+ * ============================================
+ *
+ * 📖 主题相关资源
+ * -----------
+ * - 主题文档: /docs/config/themes
+ * - shadcn 主题生成器: https://ui.shadcn.com/themes
+ * - tweakcn 主题生成器: https://tweakcn.com
+ * - ui.pub 主题生成器: https://ui.pub/x/theme-gen
+ *
+ * 🎨 当前主题
+ * -----------
+ * 默认主题：受 Qoder 启发的现代灰度主题
+ * - 参考: https://qoder.com/
+ *
+ * ⚠️ 更换主题时请注意
+ * -----------
+ * - 保留动画变量（animate-*）
+ * - 保留自定义滚动条样式
+ * - 保留 Magic UI 组件动画
+ *
+ * ============================================
+ */
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Ensure interactive controls show pointer cursor globally */
+:where(
+  button,
+  [role="button"],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"]
+) {
+  cursor: pointer;
+}
+
+:where(
+  button:disabled,
+  [role="button"][aria-disabled="true"],
+  input[type="button"]:disabled,
+  input[type="submit"]:disabled,
+  input[type="reset"]:disabled
+) {
+  cursor: not-allowed;
+}
+
+@theme inline {
+  /* ===== 基础颜色 ===== */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+
+  /* ===== 主色调 ===== */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  /* ===== 柔和色 ===== */
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  /* ===== 功能色 ===== */
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* ===== 图表颜色 ===== */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  /* ===== 侧边栏颜色 ===== */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+
+  /* ===== 圆角 ===== */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* ===== 阴影 ===== */
+  --shadow-2xs: var(--shadow-2xs);
+  --shadow-xs: var(--shadow-xs);
+  --shadow-sm: var(--shadow-sm);
+  --shadow: var(--shadow);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
+  --shadow-2xl: var(--shadow-2xl);
+
+  /* ===== 字体 ===== */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* ===== 动画 ===== */
+  --animate-shiny-text: shiny-text 8s infinite;
+  --animate-rainbow: rainbow var(--speed, 2s) infinite linear;
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  --animate-ripple: ripple var(--duration, 2s) ease calc(var(--i, 0) * 0.2s)
+    infinite;
+  --animate-pulse: pulse var(--duration) ease-out infinite;
+  --animate-meteor: meteor 5s linear infinite;
+  --animate-gradient: gradient 8s linear infinite;
+
+  /* ===== 关键帧动画 ===== */
+  @keyframes shiny-text {
+    0%,
+    90%,
+    100% {
+      background-position: calc(-100% - var(--shiny-width)) 0;
+    }
+    30%,
+    60% {
+      background-position: calc(100% + var(--shiny-width)) 0;
+    }
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 200%;
+    }
+  }
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+
+  @keyframes ripple {
+    0%,
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(0.9);
+    }
+  }
+
+  @keyframes pulse {
+    0%,
+    100% {
+      box-shadow: 0 0 0 0 var(--pulse-color);
+    }
+    50% {
+      box-shadow: 0 0 0 8px var(--pulse-color);
+    }
+  }
+
+  @keyframes meteor {
+    0% {
+      transform: rotate(var(--angle)) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(var(--angle)) translateX(-500px);
+      opacity: 0;
+    }
+  }
+
+  @keyframes gradient {
+    to {
+      background-position: var(--bg-size, 300%) 0;
+    }
+  }
+}
+
+/* ============================================
+ * 【浅色模式】从主题生成器复制的内容直接替换这里
+ * ============================================ */
+:root {
+  --background: oklch(0.9689 0.0090 314.7819);
+  --foreground: oklch(0.3729 0.0306 259.7328);
+  --card: oklch(1.0000 0 0);
+  --card-foreground: oklch(0.3729 0.0306 259.7328);
+  --popover: oklch(1.0000 0 0);
+  --popover-foreground: oklch(0.3729 0.0306 259.7328);
+  --primary: oklch(0.7090 0.1592 293.5412);
+  --primary-foreground: oklch(1.0000 0 0);
+  --secondary: oklch(0.9073 0.0530 306.0902);
+  --secondary-foreground: oklch(0.4461 0.0263 256.8018);
+  --muted: oklch(0.9464 0.0327 307.1745);
+  --muted-foreground: oklch(0.5510 0.0234 264.3637);
+  --accent: oklch(0.9376 0.0260 321.9388);
+  --accent-foreground: oklch(0.3729 0.0306 259.7328);
+  --destructive: oklch(0.8077 0.1035 19.5706);
+  --destructive-foreground: oklch(1.0000 0 0);
+  --border: oklch(0.9073 0.0530 306.0902);
+  --input: oklch(0.9073 0.0530 306.0902);
+  --ring: oklch(0.7090 0.1592 293.5412);
+  --chart-1: oklch(0.7090 0.1592 293.5412);
+  --chart-2: oklch(0.6056 0.2189 292.7172);
+  --chart-3: oklch(0.5413 0.2466 293.0090);
+  --chart-4: oklch(0.4907 0.2412 292.5809);
+  --chart-5: oklch(0.4320 0.2106 292.7591);
+  --sidebar: oklch(0.9073 0.0530 306.0902);
+  --sidebar-foreground: oklch(0.3729 0.0306 259.7328);
+  --sidebar-primary: oklch(0.7090 0.1592 293.5412);
+  --sidebar-primary-foreground: oklch(1.0000 0 0);
+  --sidebar-accent: oklch(0.9376 0.0260 321.9388);
+  --sidebar-accent-foreground: oklch(0.3729 0.0306 259.7328);
+  --sidebar-border: oklch(0.9073 0.0530 306.0902);
+  --sidebar-ring: oklch(0.7090 0.1592 293.5412);
+  --radius: 0.6rem;
+  --shadow-2xs: 0px 8px 16px -4px hsl(0 0% 0% / 0.04);
+  --shadow-xs: 0px 8px 16px -4px hsl(0 0% 0% / 0.04);
+  --shadow-sm: 0px 8px 16px -4px hsl(0 0% 0% / 0.08), 0px 1px 2px -5px hsl(0 0% 0% / 0.08);
+  --shadow: 0px 8px 16px -4px hsl(0 0% 0% / 0.08), 0px 1px 2px -5px hsl(0 0% 0% / 0.08);
+  --shadow-md: 0px 8px 16px -4px hsl(0 0% 0% / 0.08), 0px 2px 4px -5px hsl(0 0% 0% / 0.08);
+  --shadow-lg: 0px 8px 16px -4px hsl(0 0% 0% / 0.08), 0px 4px 6px -5px hsl(0 0% 0% / 0.08);
+  --shadow-xl: 0px 8px 16px -4px hsl(0 0% 0% / 0.08), 0px 8px 10px -5px hsl(0 0% 0% / 0.08);
+  --shadow-2xl: 0px 8px 16px -4px hsl(0 0% 0% / 0.20);
+}
+
+/* ============================================
+ * 【深色模式】从主题生成器复制的内容直接替换这里
+ * ============================================ */
+.dark {
+  --background: oklch(0.2161 0.0061 56.0434);
+  --foreground: oklch(0.9299 0.0334 272.7879);
+  --card: oklch(0.2805 0.0309 307.2326);
+  --card-foreground: oklch(0.9299 0.0334 272.7879);
+  --popover: oklch(0.2805 0.0309 307.2326);
+  --popover-foreground: oklch(0.9299 0.0334 272.7879);
+  --primary: oklch(0.7874 0.1179 295.7538);
+  --primary-foreground: oklch(0.2161 0.0061 56.0434);
+  --secondary: oklch(0.3416 0.0444 308.8496);
+  --secondary-foreground: oklch(0.8717 0.0093 258.3382);
+  --muted: oklch(0.2283 0.0375 302.9006);
+  --muted-foreground: oklch(0.7137 0.0192 261.3246);
+  --accent: oklch(0.3858 0.0509 304.6383);
+  --accent-foreground: oklch(0.8717 0.0093 258.3382);
+  --destructive: oklch(0.8077 0.1035 19.5706);
+  --destructive-foreground: oklch(0.2161 0.0061 56.0434);
+  --border: oklch(0.3416 0.0444 308.8496);
+  --input: oklch(0.3416 0.0444 308.8496);
+  --ring: oklch(0.7874 0.1179 295.7538);
+  --chart-1: oklch(0.7874 0.1179 295.7538);
+  --chart-2: oklch(0.7090 0.1592 293.5412);
+  --chart-3: oklch(0.6056 0.2189 292.7172);
+  --chart-4: oklch(0.5413 0.2466 293.0090);
+  --chart-5: oklch(0.4907 0.2412 292.5809);
+  --sidebar: oklch(0.3416 0.0444 308.8496);
+  --sidebar-foreground: oklch(0.9299 0.0334 272.7879);
+  --sidebar-primary: oklch(0.7874 0.1179 295.7538);
+  --sidebar-primary-foreground: oklch(0.2161 0.0061 56.0434);
+  --sidebar-accent: oklch(0.3858 0.0509 304.6383);
+  --sidebar-accent-foreground: oklch(0.8717 0.0093 258.3382);
+  --sidebar-border: oklch(0.3416 0.0444 308.8496);
+  --sidebar-ring: oklch(0.7874 0.1179 295.7538);
+  --radius: 0.6rem;
+  --shadow-2xs: 0px 8px 16px -4px hsl(0 0% 0% / 0.04);
+  --shadow-xs: 0px 8px 16px -4px hsl(0 0% 0% / 0.04);
+  --shadow-sm: 0px 8px 16px -4px hsl(0 0% 0% / 0.08), 0px 1px 2px -5px hsl(0 0% 0% / 0.08);
+  --shadow: 0px 8px 16px -4px hsl(0 0% 0% / 0.08), 0px 1px 2px -5px hsl(0 0% 0% / 0.08);
+  --shadow-md: 0px 8px 16px -4px hsl(0 0% 0% / 0.08), 0px 2px 4px -5px hsl(0 0% 0% / 0.08);
+  --shadow-lg: 0px 8px 16px -4px hsl(0 0% 0% / 0.08), 0px 4px 6px -5px hsl(0 0% 0% / 0.08);
+  --shadow-xl: 0px 8px 16px -4px hsl(0 0% 0% / 0.08), 0px 8px 10px -5px hsl(0 0% 0% / 0.08);
+  --shadow-2xl: 0px 8px 16px -4px hsl(0 0% 0% / 0.20);
+}
+
+/* ============================================
+ * Tailwind CSS v4 边框兼容性
+ * ============================================
+ * Tailwind CSS v4 默认边框颜色改为 currentColor
+ * 以下样式确保与 v3 保持一致的视觉效果
+ */
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings:
+      "rlig" 1,
+      "calt" 1;
+  }
+
+  * {
+    @apply border-border outline-ring/50;
+  }
+}
+
+body {
+  @apply overscroll-none bg-transparent;
+}
+
+/* ============================================
+ * 自定义滚动条样式
+ * ============================================ */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(var(--muted-foreground) / 0.3) hsl(var(--muted));
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 3px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+/* ============================================
+ * Magic UI 组件动画
+ * ============================================ */
+
+/* 闪光滑动动画 */
+@keyframes shimmer-slide {
+  from {
+    transform: translateX(-100%) scaleX(0.1);
+  }
+  to {
+    transform: translateX(200%) scaleX(1);
+  }
+}
+
+/* 旋转动画 */
+@keyframes spin-around {
+  from {
+    transform: rotate(0deg) translateX(-50%);
+  }
+  to {
+    transform: rotate(360deg) translateX(-50%);
+  }
+}
+
+/* 流星动画 */
+@keyframes meteor {
+  from {
+    transform: rotate(215deg) translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(215deg) translateX(-500px);
+    opacity: 0;
+  }
+}
+
+/* 闪光文字动画 */
+@keyframes shiny-text {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* 涟漪扩散动画 */
+@keyframes rippling {
+  0% {
+    transform: scale(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* 涟漪动画 */
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* 渐变动画 */
+@keyframes gradient {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* 折叠面板展开动画 */
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+/* 折叠面板收起动画 */
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+/* 流星效果动画 */
+@keyframes meteor-effect {
+  from {
+    transform: rotate(215deg) translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: rotate(215deg) translateX(-1000px);
+    opacity: 0;
+  }
+}
+
+/* 边框光束动画 */
+@keyframes border-beam {
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+/* Shine 边框动画 */
+@keyframes shine {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* ============================================
+ * 动画应用类
+ * ============================================ */
+.animate-shimmer-slide {
+  animation: shimmer-slide var(--speed, 3s) infinite linear;
+}
+
+.animate-spin-around {
+  animation: spin-around var(--speed, 3s) infinite linear;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration, 40s) linear infinite;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration, 40s) linear infinite;
+}
+
+.animate-meteor {
+  animation: meteor var(--duration, 2s) ease-out infinite;
+}
+
+.animate-rainbow {
+  animation: rainbow 3s linear infinite;
+}
+
+.animate-shiny-text {
+  animation: shiny-text 1s cubic-bezier(0.6, 0.6, 0, 1) infinite;
+}
+
+.animate-rippling {
+  animation: rippling 0.6s ease-out;
+}
+
+.animate-ripple {
+  animation: ripple 0.6s ease-out;
+}
+
+.animate-gradient {
+  animation: gradient 3s ease infinite;
+  background-size: 200% 100%;
+}
+
+.animate-accordion-down {
+  animation: accordion-down 0.2s ease-out;
+}
+
+.animate-accordion-up {
+  animation: accordion-up 0.2s ease-out;
+}
+
+.animate-meteor-effect {
+  animation: meteor-effect 1s ease-out infinite;
+}
+
+/* ============================================
+ * 渐变文字效果
+ * ============================================ */
+.text-gradient_indigo-purple {
+  background: linear-gradient(90deg, #6366f1 0%, rgb(168 85 247 / 0.8) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ============================================
+ * 滚动锁定修复
+ * ============================================
+ * https://github.com/shadcn-ui/ui/issues/4227#issuecomment-2438290165
+ */
+html body[data-scroll-locked] {
+  overflow: visible !important;
+  margin-right: 0 !important;
+}
+
+/* ============================================
+ * 实用类
+ * ============================================ */
+.container {
+  @apply max-sm:px-4;
+}

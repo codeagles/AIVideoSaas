@@ -1,0 +1,539 @@
+{
+  "Metadata": {
+    "title": "VideoFly - AI 视频生成平台",
+    "description": "使用 Sora 2、Veo 3.1 等模型在几分钟内创建惊人的 AI 视频"
+  },
+  "Common": {
+    "login": "登录",
+    "signup": "注册",
+    "logout": "退出",
+    "language": "语言",
+    "submit": "提交",
+    "cancel": "取消",
+    "save": "保存",
+    "delete": "删除",
+    "edit": "编辑",
+    "loading": "加载中...",
+    "error": "出错了",
+    "success": "成功"
+  },
+  "Header": {
+    "models": "模型",
+    "tools": "工具",
+    "pricing": "定价",
+    "docs": "文档",
+    "myCreations": "我的作品",
+    "credits": "积分",
+    "settings": "设置"
+  },
+  "Hero": {
+    "badge": "支持 Sora 2、Veo 3.1 等模型",
+    "title": "将您的想法转化为精彩视频",
+    "subtitle": "使用 AI",
+    "description": "在几分钟内创建专业的 AI 生成视频。支持文本转视频、图片转视频，或增强现有素材。",
+    "startCreating": "免费开始创作",
+    "viewExamples": "查看示例",
+    "features": {
+      "fast": "闪电般快速",
+      "easy": "简单易用",
+      "ai": "AI 驱动"
+    },
+    "stats": {
+      "videos": "个视频已创建",
+      "users": "位满意用户",
+      "rating": "用户评分"
+    },
+    "creditsHint": "免费积分开始 • 无需信用卡"
+  },
+  "Notifications": {
+    "generationWillNotify": "生成时间较长，我们会在生成完成后通知你。",
+    "enableNotifications": "开启通知",
+    "notificationDescription": "视频生成完成后，我们将通过浏览器通知告知您。",
+    "maybeLater": "稍后再说",
+    "allow": "允许",
+    "videoReadyTitle": "{siteName} - 视频已生成",
+    "videoReadyBody": "提示词：{prompt}\n生成已完成，点击查看。",
+    "videoReadyBodyShort": "生成已完成，点击查看。"
+  },
+  "ToolPage": {
+    "generator": "生成器",
+    "result": "结果",
+    "queueTitle": "生成队列",
+    "queueEmpty": "暂无进行中的任务",
+    "recentTitle": "最近结果",
+    "recentEmpty": "暂无结果",
+    "resultTitle": "结果",
+    "newGeneration": "新建生成",
+    "exploreTitle": "探索示例",
+    "exploreSubtitle": "暂无社区内容，先从你的创作开始",
+    "emptyTitle": "预览会出现在这里",
+    "emptySubtitle": "在左侧发起生成后即可显示",
+    "promptIdeas": "提示词灵感",
+    "promptExample1": "霓虹雨夜街景特写，慢动作氛围感。",
+    "promptExample2": "金色夕阳下的咖啡馆，轻微横移镜头。",
+    "promptExample3": "雾气中的未来城市天际线，柔和光影。",
+    "tipsTitle": "小提示",
+    "tipsLine1": "描述主体、光线与动作更清晰。",
+    "tipsLine2": "加入镜头运动：平移/推拉/变焦。",
+    "tipsLine3": "补充情绪词：电影感、梦幻、极简。",
+    "generatingTag": "生成中",
+    "generatingHint": "视频生成中，可继续发起新任务。",
+    "modelLabel": "模型",
+    "download": "下载"
+  },
+  "Showcase": {
+    "badge": "亲眼见证",
+    "title": "使用 VideoFly 创作",
+    "subtitle": "AI 生成的精彩视频",
+    "description": "探索我们社区使用 AI 视频生成创作的精彩作品。从电影级风景到产品动画，无所不能。",
+    "ctaText": "准备好创作自己的杰作了吗？",
+    "ctaButton": "立即开始创作"
+  },
+  "Features": {
+    "badge": "强大功能",
+    "title": "您需要的一切",
+    "subtitle": "强大的功能助您创建精彩视频",
+    "description": "探索让视频创作变得简单有趣的工具和功能",
+    "learnMore": "了解更多",
+    "bottomCTA": {
+      "text": "准备好将您的想法转化为视频了吗？",
+      "button": "立即开始创作"
+    },
+    "textToVideo": {
+      "title": "文本转视频",
+      "description": "使用先进的 AI 模型将文本提示转化为精彩视频"
+    },
+    "imageToVideo": {
+      "title": "图片转视频",
+      "description": "用 AI 让您的图片动起来，赋予生命"
+    },
+    "enhancement": {
+      "title": "视频增强",
+      "description": "使用 AI 放大、增强和扩展现有视频"
+    },
+    "fast": {
+      "title": "闪电般快速",
+      "description": "仅需 2-5 分钟即可生成专业视频"
+    },
+    "secure": {
+      "title": "安全私密",
+      "description": "您的数据已加密，视频安全存储"
+    },
+    "realtime": {
+      "title": "实时更新",
+      "description": "实时跟踪视频生成进度"
+    },
+    "formats": {
+      "title": "多种格式",
+      "description": "支持多种宽高比，适用于任何平台"
+    },
+    "ai": {
+      "title": "先进 AI",
+      "description": "由最新的 AI 视频生成模型驱动"
+    }
+  },
+  "HowItWorks": {
+    "badge": "简单流程",
+    "title": "使用方法",
+    "subtitle": "4 步创建您的视频",
+    "description": "使用直观的视频创作工作流程，几分钟内即可开始",
+    "bottomHint": "无需信用卡 • 50 个免费积分开始",
+    "steps": {
+      "prompt": {
+        "title": "描述您的视频",
+        "description": "输入详细的文本提示，描述您想创建的视频",
+        "stat": "平均时间"
+      },
+      "upload": {
+        "title": "上传参考",
+        "description": "可选择添加参考图片来引导 AI（可选）"
+      },
+      "generate": {
+        "title": "AI 生成",
+        "description": "我们的 AI 处理您的请求并创建独特视频",
+        "stat": "生成时间"
+      },
+      "download": {
+        "title": "下载分享",
+        "description": "获取高清视频，随时随地分享",
+        "stat": "最高质量"
+      }
+    }
+  },
+  "CTA": {
+    "badge": "简单流程",
+    "title": "使用方法",
+    "subtitle": "4 步创建您的视频",
+    "description": "使用直观的视频创作工作流程，几分钟内即可开始",
+    "bottomHint": "无需信用卡 • 50 个免费积分开始",
+    "steps": {
+      "prompt": {
+        "title": "描述您的视频",
+        "description": "输入详细的文本提示，描述您想创建的视频",
+        "stat": "平均时间"
+      },
+      "upload": {
+        "title": "上传参考",
+        "description": "可选择添加参考图片来引导 AI（可选）"
+      },
+      "generate": {
+        "title": "AI 生成",
+        "description": "我们的 AI 处理您的请求并创建独特视频",
+        "stat": "生成时间"
+      },
+      "download": {
+        "title": "下载分享",
+        "description": "获取高清视频，随时随地分享",
+        "stat": "最高质量"
+      }
+    }
+  },
+  "CTA": {
+    "badge": "限时优惠",
+    "title": "准备好创作精彩视频了吗？",
+    "subtitle": "加入数千名正在使用 VideoFly 的创作者",
+    "description": "立即开始使用我们的免费试用创建专业视频",
+    "getStarted": "免费开始",
+    "learnMore": "了解更多",
+    "benefits": {
+      "free": "50 个免费积分开始",
+      "noCard": "无需信用卡",
+      "cancel": "随时取消",
+      "support": "7x24 客户支持"
+    },
+    "generating": "生成中...",
+    "readyIn": "就绪时间",
+    "minutes": "分钟",
+    "from": "来自",
+    "reviews": "条评价",
+    "testimonials": {
+      "title": "创作者喜爱",
+      "subtitle": "看看用户怎么说"
+    }
+  },
+  "FAQ": {
+    "title": "常见问题",
+    "subtitle": "关于 VideoFly 模板的一切",
+    "contact": "还有其他问题？请联系我们",
+    "template": {
+      "question": "什么是 VideoFly 模板？",
+      "answer": "VideoFly 是一个生产级 AI 视频生成 SaaS 模板，基于 Next.js 15、React 19 和 Drizzle ORM 构建。它包含了启动自己的 AI 视频平台所需的一切：用户认证、积分系统、AI 供应商集成、支付处理，以及可直接定制的精美 UI。"
+    },
+    "deployment": {
+      "question": "如何部署这个模板？",
+      "answer": "VideoFly 可以部署到 Vercel、Railway 或任何 Node.js 托管平台。只需连接您的 GitHub 仓库，设置所需的环境变量，然后部署即可。模板在 /docs 文件夹中包含详细文档，指导您完成整个过程。"
+    },
+    "aiModels": {
+      "question": "支持哪些 AI 模型？",
+      "answer": "模板目前支持 Evolink（Sora 2、Wan 2.6、Veo 3.1、Seedance）和 Kie.ai。模块化的供应商架构使添加更多 AI 供应商变得简单。您可以在 config/pricing-user.ts 文件中配置模型和价格。"
+    },
+    "credits": {
+      "question": "积分系统是如何工作的？",
+      "answer": "VideoFly 使用基于 FIFO 的积分系统，采用冻结/结算/释放模式。用户购买积分包或订阅，在生成视频时消耗积分。系统支持积分过期、退款和详细的交易记录。"
+    },
+    "customization": {
+      "question": "我可以自定义 UI 和品牌吗？",
+      "answer": "当然可以！模板基于 Tailwind CSS 4 和 shadcn/ui 组件构建，使定制变得简单直观。所有的颜色、字体和样式都可以通过 Tailwind 配置进行修改。组件结构模块化且有完善的文档。"
+    },
+    "payment": {
+      "question": "集成了哪些支付提供商？",
+      "answer": "VideoFly 以 Creem 为主要支付集成提供商，Stripe 作为备选选项。两者都支持订阅和一次性购买。支付 webhook 系统会自动将积分分配到用户账户。"
+    }
+  },
+  "Footer": {
+    "product": "产品",
+    "company": "公司",
+    "legal": "法律",
+    "copyright": "© {year} VideoFly. 保留所有权利。"
+  },
+  "Credits": {
+    "title": "积分",
+    "balance": "积分余额",
+    "available": "可用",
+    "frozen": "冻结",
+    "used": "已使用",
+    "expiringSoon": "即将过期",
+    "buyCredits": "购买积分",
+    "history": "交易历史",
+    "packages": {
+      "starter": {
+        "name": "入门积分包",
+        "description": "适合试用体验"
+      },
+      "basic": {
+        "name": "基础计划",
+        "description": "适合初学者"
+      },
+      "pro": {
+        "name": "专业计划",
+        "description": "适合专业人士"
+      },
+      "team": {
+        "name": "团队计划",
+        "description": "适合团队和企业"
+      },
+      "standard": {
+        "name": "标准积分包",
+        "description": "一次性积分购买"
+      }
+    },
+    "features": {
+      "hd_videos": "高清视频生成",
+      "fast_generation": "快速生成",
+      "no_watermark": "无水印",
+      "commercial_use": "商业使用授权",
+      "priority_support": "优先支持",
+      "api_access": "API 访问",
+      "custom_models": "自定义 AI 模型"
+    }
+  },
+  "VideoGenerator": {
+    "selectModel": "选择模型",
+    "uploadImage": "上传图片",
+    "enterPrompt": "输入提示词",
+    "duration": "时长",
+    "aspectRatio": "宽高比",
+    "quality": "质量",
+    "estimateCredits": "预计积分",
+    "generate": "生成视频",
+    "regenerate": "重新生成",
+    "download": "下载",
+    "status": {
+      "pending": "等待中",
+      "generating": "生成中...",
+      "completed": "已完成",
+      "failed": "失败"
+    }
+  },
+  "PricingCards": {
+    "pricing": "定价",
+    "slogan": "简单透明的价格",
+    "onetime": "积分包",
+    "monthly": "按月",
+    "yearly": "按年",
+    "off_percent": "40% OFF",
+    "no_products": "暂无可用产品",
+    "per_year": "/年",
+    "per_month": "/月",
+    "monthly_bill": "按月付费",
+    "annual_bill": "按年付费",
+    "mo": "/月",
+    "annual_info": "/年",
+    "monthly_info": "每月",
+    "go_to_dashboard": "前往控制台",
+    "signup": "注册",
+    "contact": "获取支持。",
+    "contact_2": "我们随时为您提供帮助。",
+    "manage_subscription": "管理订阅",
+    "upgrade": "升级"
+  },
+  "PricingFaq": {
+    "faq": "常见问题",
+    "faq_detail": "查找关于我们定价的常见问题答案"
+  },
+  "Sidebar": {
+    "title": "导航菜单",
+    "upgradeTitle": "升级专业版",
+    "upgradeSubtitle": "解锁更快生成与更多额度"
+  },
+  "UpgradeModal": {
+    "default_title": "升级您的方案",
+    "default_description": "选择适合您的方案",
+    "insufficient_credits_title": "积分不足",
+    "insufficient_credits_description": "您需要至少 {credits} 积分来生成此视频。请购买积分包或升级方案以继续。",
+    "expired_title": "积分已过期",
+    "expired_description": "您的积分已过期。请购买新的积分包或订阅方案以继续创作。"
+  },
+  "UserAccountNav": {
+    "dashboard": "控制台",
+    "billing": "账单",
+    "settings": "设置",
+    "sign_out": "退出登录"
+  },
+  "NavBar": {
+    "login": "登录",
+    "signup": "注册"
+  },
+  "SignInModal": {
+    "signin_title": "登录您的账户",
+    "signin_subtitle": "立即开始使用 VideoFly",
+    "privacy": "继续即表示您同意我们的服务条款和隐私政策。",
+    "continue_google": "使用 Google 继续",
+    "continue_email": "使用邮箱继续",
+    "or_continue_with": "或使用以下方式继续",
+    "email_placeholder": "name@example.com",
+    "terms_notice": "继续即表示您同意我们的服务条款和隐私政策。"
+  },
+  "MainNav": {
+    "introducing": "介绍 VideoFly"
+  },
+  "SiteFooter": {
+    "copyright": "© {currentYear} VideoFly. 保留所有权利。"
+  },
+  "Mail": {
+    "common": {
+      "team": "{name} 团队",
+      "copyright": "© {year} 保留所有权利。"
+    },
+    "welcome": {
+      "subject": "欢迎加入 VideoFly！",
+      "greeting": "您好 {name}，",
+      "title": "欢迎来到 VideoFly！",
+      "body": "感谢您注册 VideoFly！我们很高兴您的加入。",
+      "features": "使用 VideoFly，您可以：",
+      "featuresList": {
+        "generate": "在几分钟内生成精彩的 AI 视频",
+        "models": "使用 Sora 2、Veo 3.1 等多种 AI 模型",
+        "share": "随时随地下载和分享您的作品"
+      },
+      "cta": "开始创作视频",
+      "footer": "如果您有任何问题，欢迎随时联系我们的支持团队。"
+    },
+    "resetPassword": {
+      "subject": "重置您的密码",
+      "greeting": "您好 {name}，",
+      "title": "重置您的密码",
+      "body": "我们收到了您重置 VideoFly 账户密码的请求。",
+      "instruction": "点击下方按钮重置您的密码：",
+      "button": "重置密码",
+      "validity": "此链接将在 30 分钟后过期，且只能使用一次。",
+      "security": "出于安全考虑，此链接将在 30 分钟后过期。",
+      "ignore": "如果您没有请求重置密码，可以安全地忽略此邮件。",
+      "footer": "如果您没有请求此操作，请忽略此邮件。"
+    },
+    "magicLink": {
+      "subject": "登录 VideoFly",
+      "greeting": "您好 {name}，",
+      "title": "登录 VideoFly",
+      "body": "我们收到了您登录 VideoFly 账户的请求。",
+      "instruction": "点击下方按钮登录：",
+      "button": "登录",
+      "validity": "此链接将在 24 小时后过期。",
+      "security": "出于安全考虑，此链接只能使用一次。",
+      "footer": "如果您没有请求此操作，请忽略此邮件。"
+    }
+  },
+  "Emails": {
+    "welcome": {
+      "subject": "欢迎加入 VideoFly！",
+      "greeting": "您好 {name}，",
+      "title": "欢迎来到 VideoFly！",
+      "body": "感谢您注册 VideoFly！我们很高兴您的加入。",
+      "features": "使用 VideoFly，您可以：",
+      "featuresList": {
+        "generate": "在几分钟内生成精彩的 AI 视频",
+        "models": "使用 Sora 2、Veo 3.1 等多种 AI 模型",
+        "share": "随时随地下载和分享您的作品"
+      },
+      "cta": "开始创作视频",
+      "footer": "如果您有任何问题，欢迎随时联系我们的支持团队。",
+      "copyright": "© {year} VideoFly. 保留所有权利。"
+    },
+    "resetPassword": {
+      "subject": "重置您的密码",
+      "greeting": "您好 {name}，",
+      "title": "重置您的密码",
+      "body": "我们收到了您重置 VideoFly 账户密码的请求。",
+      "instruction": "点击下方按钮重置您的密码：",
+      "button": "重置密码",
+      "validity": "此链接将在 30 分钟后过期，且只能使用一次。",
+      "ignore": "如果您没有请求重置密码，可以安全地忽略此邮件。",
+      "security": "出于安全考虑，此链接将在 30 分钟后过期。",
+      "footer": "如果您没有请求此操作，请忽略此邮件。",
+      "copyright": "© {year} VideoFly. 保留所有权利。"
+    }
+  },
+  "dashboard": {
+    "myCreations": {
+      "title": "我的创作",
+      "filter": {
+        "allStatus": "全部状态",
+        "all": "全部",
+        "completed": "已完成",
+        "processing": "生成中",
+        "generating": "生成中",
+        "failed": "失败",
+        "allModels": "全部模型",
+        "newest": "最新",
+        "oldest": "最旧"
+      },
+      "status": {
+        "pending": "等待中",
+        "generating": "生成中...",
+        "uploading": "上传中...",
+        "completed": "已完成",
+        "processing": "生成中...",
+        "failed": "失败"
+      },
+      "actions": {
+        "play": "播放",
+        "download": "下载",
+        "delete": "删除",
+        "retry": "重试",
+        "viewDetails": "查看详情",
+        "downloadSuccess": "开始下载",
+        "downloadError": "下载失败",
+        "deleteSuccess": "删除成功",
+        "deleteError": "删除失败",
+        "retrySuccess": "已开始重试",
+        "retryError": "重试失败"
+      },
+      "empty": {
+        "title": "暂无创作",
+        "description": "您生成的视频将显示在这里"
+      },
+      "deleteConfirm": {
+        "title": "删除视频？",
+        "message": "此操作无法撤销。",
+        "confirm": "删除",
+        "cancel": "取消"
+      },
+      "detail": {
+        "model": "模型",
+        "duration": "时长",
+        "aspectRatio": "宽高比",
+        "prompt": "提示词",
+        "createdAt": "创建时间",
+        "creditsUsed": "消耗积分"
+      }
+    },
+    "credits": {
+      "title": "积分",
+      "available": "可用积分",
+      "frozen": "冻结",
+      "used": "已用",
+      "buyCredits": "购买积分",
+      "history": "积分历史",
+      "loadMore": "加载更多",
+      "types": {
+        "videoGenerate": "视频生成",
+        "purchase": "购买",
+        "refund": "退款",
+        "subscription": "订阅",
+        "adminAdjust": "管理员调整"
+      }
+    },
+    "settings": {
+      "title": "账单",
+      "account": "账户",
+      "email": "邮箱",
+      "userId": "用户ID",
+      "joined": "加入时间",
+      "billingHistory": "购买记录",
+      "status": {
+        "paid": "已支付",
+        "pending": "待支付",
+        "failed": "失败"
+      }
+    }
+  },
+  "VideoHistory": {
+    "title": "最近生成",
+    "demoTitle": "示例视频",
+    "generating": "正在生成视频...",
+    "download": "下载",
+    "copyLink": "复制链接",
+    "removeFromHistory": "从历史中移除",
+    "generationFailed": "生成失败"
+  }
+}

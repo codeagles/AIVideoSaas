@@ -1,0 +1,76 @@
+/**
+ * ============================================
+ * 翡翠暗色主题 - Emerald Dark Theme
+ * ============================================
+ *
+ * 这是一个以翡翠绿为主的暗色主题
+ * 适合开发者工具/技术产品
+ */
+
+:root {
+  /* ===== 默认就是暗色 ===== */
+  --background: 150deg 20% 8%;
+  --foreground: 150deg 10% 95%;
+
+  /* ===== 边框 ===== */
+  --border: 150deg 15% 18%;
+  --input: 150deg 15% 22%;
+
+  /* ===== 卡片 ===== */
+  --card: 150deg 15% 10%;
+  --card-foreground: 150deg 10% 95%;
+
+  /* ===== 主色调（翡翠绿）===== */
+  --primary: 160deg 84% 39%;
+  --primary-foreground: 0deg 0% 100%;
+
+  /* ===== 次要色调 ===== */
+  --secondary: 150deg 15% 15%;
+  --secondary-foreground: 150deg 10% 95%;
+
+  /* ===== 柔和背景 ===== */
+  --muted: 150deg 15% 15%;
+  --muted-foreground: 150deg 10% 60%;
+
+  /* ===== 强调色 ===== */
+  --accent: 150deg 15% 15%;
+  --accent-foreground: 150deg 10% 95%;
+
+  /* ===== 弹出层 ===== */
+  --popover: 150deg 15% 10%;
+  --popover-foreground: 150deg 10% 95%;
+
+  /* ===== 警告/危险 ===== */
+  --destructive: 0deg 74% 51%;
+  --destructive-foreground: 0deg 0% 98%;
+
+  /* ===== 焦点环 ===== */
+  --ring: 160deg 84% 39%;
+
+  /* ===== 圆角 ===== */
+  --radius: 0.5rem;
+}
+
+/* 浅色模式变体 */
+.light {
+  --background: 150deg 30% 98%;
+  --foreground: 150deg 30% 10%;
+  --border: 150deg 20% 88%;
+  --input: 150deg 20% 88%;
+  --card: 0deg 0% 100%;
+  --card-foreground: 150deg 30% 10%;
+  --primary: 160deg 84% 39%;
+  --primary-foreground: 0deg 0% 100%;
+  --secondary: 150deg 20% 95%;
+  --secondary-foreground: 150deg 30% 10%;
+  --muted: 150deg 20% 95%;
+  --muted-foreground: 150deg 15% 40%;
+  --accent: 150deg 20% 95%;
+  --accent-foreground: 150deg 30% 10%;
+  --popover: 0deg 0% 100%;
+  --popover-foreground: 150deg 30% 10%;
+  --destructive: 0deg 84% 60%;
+  --destructive-foreground: 0deg 0% 98%;
+  --ring: 160deg 84% 39%;
+  --radius: 0.5rem;
+}

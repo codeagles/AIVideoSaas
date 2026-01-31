@@ -1,0 +1,175 @@
+---
+title: Admin Dashboard Guide
+description: Complete guide to using the VideoFly admin dashboard for user and credit management.
+---
+
+# Admin Dashboard Guide
+
+This guide covers how to use the VideoFly admin dashboard for managing users, credits, and monitoring system performance.
+
+## Accessing the Admin Dashboard
+
+### Step 1: Configure Admin Email
+
+Add your email to `.env.local`:
+
+```env
+ADMIN_EMAIL="your-email@example.com"
+```
+
+### Step 2: Login
+
+Login with the email you configured. The system will automatically grant admin permissions.
+
+### Step 3: Access Dashboard
+
+Navigate to:
+- **English**: `/en/admin`
+- **中文**: `/zh/admin`
+
+## Dashboard Overview
+
+The admin dashboard provides a comprehensive overview of your VideoFly instance:
+
+### Key Metrics
+
+| Metric | Description |
+|--------|-------------|
+| **Total Users** | Number of registered users |
+| **Total Videos** | Total video generation requests |
+| **Success Rate** | Percentage of successful video generations |
+| **Credit Packages** | Total active credit packages |
+| **Recent Users** | New users in the last 7 days |
+| **Recent Videos** | Videos generated in the last 7 days |
+
+### Video Status Breakdown
+
+- **Completed**: Successfully generated videos
+- **Failed**: Failed video generations
+- **Pending**: Currently processing
+
+## User Management
+
+Navigate to **Users** in the sidebar to manage users.
+
+### User List Features
+
+- **Search**: Find users by email or name
+- **Pagination**: Browse through users (20 per page)
+- **User Information**:
+  - Avatar and name
+  - Email address
+  - Video count (total generated)
+  - Credit packages count
+  - Available credits
+  - Admin status indicator
+
+### Admin Badge
+
+Users with admin permissions display a shield icon badge:
+- 🛡️ **管理员** - Admin user
+- Regular badge - Regular user
+
+## Credit Management
+
+### Adding Credits via Dashboard
+
+1. Go to **Settings** in the admin sidebar
+2. Use the command line scripts shown in the settings panel
+
+### Adding Credits via Command Line
+
+```bash
+# Add credits to a user
+pnpm script:add-credits user@example.com 100 "Test credits"
+
+# Check user credits
+pnpm script:check-credits user@example.com
+
+# Reset user credits (be careful!)
+pnpm script:reset-credits user@example.com --confirm
+```
+
+### Adding Credits via API
+
+```javascript
+// In browser console after logging in as admin
+await fetch('/api/v1/admin/credits/add', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  credentials: 'include',
+  body: JSON.stringify({
+    credits: 100,
+    remark: 'Test credits'
+  })
+})
+```
+
+## System Configuration
+
+Access configuration documentation from **Settings** page:
+
+- **Pricing Configuration**: Link to full configuration guide
+- **Quick Start Guide**: Link to getting started documentation
+
+### Key Configuration Files
+
+- `src/config/pricing-user.ts` - Pricing, credits, and AI model configuration
+- `.env.local` - Admin email and environment variables
+
+## Best Practices
+
+### Admin Security
+
+1. **Limit Admin Access**: Only grant admin access to trusted team members
+2. **Use Strong Passwords**: Ensure admin accounts use secure passwords
+3. **Monitor Activity**: Regularly check user list and credit transactions
+4. **Production Protection**: Consider additional authentication for admin routes in production
+
+### Credit Management
+
+1. **Test Credits**: Use small amounts for testing
+2. **Document Transactions**: Always add remarks when adding credits manually
+3. **Regular Cleanup**: Periodically review and clean up test data
+4. **Monitor Usage**: Keep an eye on credit consumption patterns
+
+## Troubleshooting
+
+### Admin Access Not Working
+
+1. Verify `ADMIN_EMAIL` is set in `.env.local`
+2. Restart the development server after changing `.env.local`
+3. Ensure you're logging in with the exact email address
+4. Check browser console for any errors
+
+### Dashboard Not Loading
+
+1. Verify you're logged in
+2. Check your admin status
+3. Clear browser cache
+4. Check browser console for errors
+
+### Credits Not Appearing
+
+1. Refresh the page (credit balance has a 30-second cache)
+2. Verify the credit was added successfully
+3. Check the credit expiry date
+4. Ensure the user ID is correct
+
+## Admin Sidebar Navigation
+
+| Menu Item | Description |
+|------------|-------------|
+| **Dashboard** | System overview and statistics |
+| **Users** | User management and search |
+| **Analytics** | Data analysis (coming soon) |
+| **Settings** | Configuration and documentation links |
+| **Back to App** | Return to main application |
+
+---
+
+<Callout type="tip">
+
+**Tip**: Use the admin dashboard regularly to monitor system health and user activity.
+
+</Callout>

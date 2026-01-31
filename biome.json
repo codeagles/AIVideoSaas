@@ -1,0 +1,80 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "vcs": {
+    "enabled": false,
+    "clientKind": "git",
+    "useIgnoreFile": false
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "ignore": [
+      ".claude/**",
+      ".next/**",
+      ".contentlayer/**",
+      "apps/**",
+      "packages/**",
+      "tooling/**",
+      "turbo/**",
+      "docs/**",
+      "node_modules/**",
+      "dist/**",
+      "build/**",
+      "src/db/**",
+      "src/components/ui/*.tsx",
+      "src/components/magicui/**",
+      "src/components/animate-ui/**",
+      "src/types/index.d.ts"
+    ]
+  },
+  "formatter": {
+    "enabled": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "formatWithErrors": true
+  },
+  "organizeImports": {
+    "enabled": false
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "suspicious": {
+        "noSparseArray": "off",
+        "noArrayIndexKey": "off",
+        "noExplicitAny": "off"
+      },
+      "complexity": {
+        "noForEach": "off"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "off"
+      },
+      "style": {
+        "useTemplate": "off",
+        "noNonNullAssertion": "off",
+        "useShorthandArrayType": "off",
+        "noUnusedTemplateLiteral": "off",
+        "useImportType": "off"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "off"
+      },
+      "a11y": {
+        "useValidAnchor": "off",
+        "noSvgWithoutTitle": "off",
+        "useKeyWithClickEvents": "off",
+        "useAltText": "off",
+        "useMediaCaption": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingCommas": "es5",
+      "semicolons": "always"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+/**
+ * ============================================
+ * 紫色渐变主题 - Purple Gradient Theme
+ * ============================================
+ *
+ * 这是一个充满活力的紫色渐变主题
+ * 适合创意/设计类产品
+ */
+
+:root {
+  /* ===== 基础颜色 ===== */
+  --background: 0deg 0% 100%;
+  --foreground: 270deg 30% 15%;
+
+  /* ===== 边框 ===== */
+  --border: 270deg 15% 88%;
+  --input: 270deg 15% 88%;
+
+  /* ===== 卡片 ===== */
+  --card: 0deg 0% 100%;
+  --card-foreground: 270deg 30% 15%;
+
+  /* ===== 主色调（紫色）===== */
+  --primary: 271deg 76% 53%;
+  --primary-foreground: 0deg 0% 100%;
+
+  /* ===== 次要色调 ===== */
+  --secondary: 270deg 20% 95%;
+  --secondary-foreground: 270deg 30% 15%;
+
+  /* ===== 柔和背景 ===== */
+  --muted: 270deg 15% 96%;
+  --muted-foreground: 270deg 15% 45%;
+
+  /* ===== 强调色 ===== */
+  --accent: 270deg 15% 96%;
+  --accent-foreground: 270deg 30% 15%;
+
+  /* ===== 弹出层 ===== */
+  --popover: 0deg 0% 100%;
+  --popover-foreground: 270deg 30% 15%;
+
+  /* ===== 警告/危险 ===== */
+  --destructive: 0deg 84% 60%;
+  --destructive-foreground: 0deg 0% 98%;
+
+  /* ===== 焦点环 ===== */
+  --ring: 271deg 76% 53%;
+
+  /* ===== 圆角 ===== */
+  --radius: 0.75rem;
+}
+
+.dark {
+  /* ===== 深紫色背景 ===== */
+  --background: 270deg 30% 8%;
+  --foreground: 270deg 20% 95%;
+
+  /* ===== 边框 ===== */
+  --border: 271deg 25% 18%;
+  --input: 271deg 25% 22%;
+
+  /* ===== 卡片 ===== */
+  --card: 271deg 25% 12%;
+  --card-foreground: 270deg 20% 95%;
+
+  /* ===== 主色调 ===== */
+  --primary: 271deg 76% 63%;
+  --primary-foreground: 270deg 30% 8%;
+
+  /* ===== 次要色调 ===== */
+  --secondary: 271deg 25% 18%;
+  --secondary-foreground: 270deg 20% 95%;
+
+  /* ===== 柔和背景 ===== */
+  --muted: 271deg 25% 18%;
+  --muted-foreground: 270deg 15% 60%;
+
+  /* ===== 强调色 ===== */
+  --accent: 271deg 25% 18%;
+  --accent-foreground: 270deg 20% 95%;
+
+  /* ===== 弹出层 ===== */
+  --popover: 271deg 25% 12%;
+  --popover-foreground: 270deg 20% 95%;
+
+  /* ===== 警告/危险 ===== */
+  --destructive: 0deg 63% 42%;
+  --destructive-foreground: 270deg 20% 95%;
+
+  /* ===== 焦点环 ===== */
+  --ring: 271deg 76% 63%;
+
+  /* ===== 圆角 ===== */
+  --radius: 0.75rem;
+}

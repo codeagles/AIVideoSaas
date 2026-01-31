@@ -1,0 +1,35 @@
+{
+  "project": {
+    "name": "VideoFly",
+    "description": "AI Video Generation Platform",
+    "version": "0.1.0"
+  },
+  "conventions": {
+    "language": "TypeScript",
+    "framework": "Next.js 15 (App Router)",
+    "styling": "Tailwind CSS",
+    "database": "PostgreSQL + Kysely",
+    "auth": "Better Auth",
+    "packageManager": "pnpm",
+    "monorepo": "Turborepo"
+  },
+  "codeStyle": {
+    "quotes": "double",
+    "semicolons": true,
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "importOrder": ["react", "next", "@videofly/*", "~/", "./"]
+  },
+  "paths": {
+    "api": "apps/nextjs/src/app/api/v1",
+    "components": "apps/nextjs/src/components",
+    "lib": "apps/nextjs/src/lib",
+    "services": "packages/common/src/services",
+    "config": "packages/common/src/config",
+    "db": "packages/db"
+  },
+  "testing": {
+    "framework": "vitest",
+    "e2e": "playwright"
+  }
+}

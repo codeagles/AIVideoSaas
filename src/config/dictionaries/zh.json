@@ -1,0 +1,205 @@
+{
+  "price": {
+    "title": "便宜，透明的价格！",
+    "pricing": "价格",
+    "slogan": "全速启动！",
+    "monthly_bill": "月度账单",
+    "annual_bill": "年度账单",
+    "annual_info": "年度收费时将收取",
+    "monthly_info": "每月收费时",
+    "mo": "/月",
+    "contact": "联系我们的支持团队。",
+    "contact_2": "您可以测试订阅，不会被收费。",
+    "faq": "常见问题",
+    "faq_detail": "浏览我们全面的常见问题，快速找到常见问题的答案。如果您需要进一步的帮助，不要犹豫，联系我们获取个性化的帮助。",
+    "signup": "注册",
+    "upgrade": "升级",
+    "manage_subscription": "管理订阅",
+    "go_to_dashboard": "转到仪表板",
+    "": ""
+  },
+  "marketing": {
+    "introducing": "介绍 Saasfly",
+    "title": "更轻松地将您的应用推向全球，尽在 ",
+    "sub_title": "简单易上手，具备企业级品质的 Next.js 模板。打造 SaaS 服务的终极一体化解决方案，助力业务增长。",
+    "get_started": "快速开始",
+    "view_on_github": "在 GitHub 上查看",
+    "explore_product": "探索产品",
+    "features": "特色",
+    "sub_features": "云原生：为初创公司简化技术、降低成本而生。",
+    "k8s_features": "开发快速、简单",
+    "devops_features": "应用轻松部署",
+    "price_features": "经济高效为生产环境打造。",
+    "main_nav_features": "特色",
+    "main_nav_pricing": "价格",
+    "main_nav_products": "产品",
+    "main_nav_blog": "博客",
+    "main_nav_documentation": "文档",
+    "login": "登录",
+    "signup": "注册",
+    "": "",
+    "contributors": {
+      "contributors_desc": "位贡献者使Saasfly更强大了",
+      "developers_first": "帮助了超过 ",
+      "developers_second": " 位开发者"
+    },
+    "right_side": {
+      "deploy_on_vercel_title": "部署到 Vercel",
+      "deploy_on_vercel_desc": "轻松上手，快速看到成果。",
+      "ship_on_cloudflare_title": "使用 Cloudflare 发布应用",
+      "ship_on_cloudflare_desc": "使用我们基于 Cloudflare 构建的平台，助力您的业务增长。",
+      "showcase_title": "最佳实践，与您分享",
+      "showcase_desc": "发现精彩应用，与开发者交流心得，向全球展示你的才华。"
+    },
+    "features_grid": {
+      "monorepo_title": "Monorepo",
+      "monorepo_desc": "将多个项目统一管理，让代码共享更轻松，协作更高效。支持微服务架构、多平台应用以及大型项目。",
+      "i18n_title": "多语言支持",
+      "i18n_desc": "轻松实现多语言支持，为用户提供母语般的亲切体验，助您拓展国际市场，提升品牌形象。",
+      "payments_title": "全球化支付",
+      "payments_desc": "为您提供安全、便捷、高效的支付解决方案。全球化支持，多种支付方式，灵活定制，让您的业务轻松拓展，畅通无阻。",
+      "nextauth_title": "NextAuth",
+      "nextauth_desc": "让你的应用拥有安全可靠的身份验证，为用户提供丝滑流畅的登录体验。支持社交登录、邮箱验证以及自定义认证。"
+    },
+    "sponsor": {
+      "title": "我们深受赞助商的喜爱",
+      "donate": "给我们买杯咖啡，您的品牌会出现在这里"
+    },
+    "video": {
+      "first_text": "观看视频，然后",
+      "second_text1": "在 ",
+      "second_text2": "构建你的应用程序",
+      "time_text": "1 小时内"
+    },
+    "people_comment": {
+      "title": "听听大家怎么说",
+      "desc": "不要只听我们说。以下是真实用户对 Saasfly 的评价。"
+    }
+  },
+  "login": {
+    "back": "返回",
+    "welcome_back": "欢迎回来",
+    "signin_title": "输入您的电子邮件以登录您的账户",
+    "singup_title": "还没有账户？立即注册。",
+    "signin_email": "用电子邮件登录",
+    "signin_others": "或者继续使用",
+    "signup": "注册",
+    "privacy": "只有您的电子邮件和头像会被存储。",
+    "signup_github": "使用 Github 注册",
+    "": ""
+  },
+  "common": {
+    "copyright": "版权所有 © ${currentYear} Nextify公司。保留所有权利。",
+    "dashboard": {
+      "main_nav_documentation": "文档",
+      "main_nav_support": "支持",
+      "sidebar_nav_clusters": "集群",
+      "sidebar_nav_billing": "账单",
+      "sidebar_nav_settings": "设置",
+      "title_text": "创建和管理集群。",
+      "": ""
+    }
+  },
+  "business": {
+    "k8s": {
+      "new_cluster": "创建新的集群",
+      "no_cluster_title": "没有创建集群",
+      "no_cluster_content": "您还没有任何集群。开始创建集群吧。",
+      "": ""
+    },
+    "billing": {
+      "billing": "账单",
+      "content": "管理您的订阅和账单详情",
+      "noSubscription": "您尚未订阅任何计划。",
+      "subscriptionInfo": "您目前处于 <strong>{plan}</strong> 计划。您的订阅将在 <strong>{date}</strong> 续订。",
+      "manage_subscription": "管理订阅",
+      "upgrade": "升级",
+      "": ""
+    }
+  },
+  "dropdown": {
+    "dashboard": "仪表板",
+    "billing": "计费",
+    "settings": "设置",
+    "sign_out": "登出",
+    "": ""
+  },
+  "credits": {
+    "title": "积分",
+    "balance": "积分余额",
+    "available": "可用",
+    "frozen": "冻结中",
+    "used": "已使用",
+    "expiring_soon": "即将过期",
+    "buy_credits": "购买积分",
+    "history": "交易记录",
+    "no_history": "暂无交易记录",
+    "features": {
+      "100_per_month": "每月 100 积分",
+      "500_per_month": "每月 500 积分",
+      "2000_per_month": "每月 2000 积分",
+      "1200_per_year": "每年 1200 积分",
+      "6000_per_year": "每年 6000 积分",
+      "24000_per_year": "每年 24000 积分",
+      "10s_video": "支持 10 秒视频",
+      "15s_video": "支持 15 秒视频",
+      "standard_quality": "标准画质",
+      "high_quality": "高清画质可用",
+      "priority_queue": "优先处理队列",
+      "all_features": "全部功能",
+      "api_access": "API 访问权限",
+      "priority_support": "优先客服支持",
+      "50_credits": "50 积分",
+      "300_credits": "300 积分",
+      "1000_credits": "1000 积分",
+      "365_days_valid": "365 天有效期",
+      "all_models": "所有 AI 模型",
+      "best_value": "超值优选"
+    },
+    "packages": {
+      "basic": {
+        "name": "基础版",
+        "description": "适合入门体验"
+      },
+      "pro": {
+        "name": "专业版",
+        "description": "适合深度创作"
+      },
+      "team": {
+        "name": "团队版",
+        "description": "适合团队协作"
+      },
+      "starter": {
+        "name": "入门包",
+        "description": "体验尝鲜"
+      },
+      "standard": {
+        "name": "标准包",
+        "description": "热门之选"
+      },
+      "premium": {
+        "name": "尊享包",
+        "description": "重度用户首选"
+      }
+    },
+    "trans_types": {
+      "NEW_USER": "新用户赠送",
+      "ORDER_PAY": "购买",
+      "SUBSCRIPTION": "订阅充值",
+      "VIDEO_CONSUME": "视频生成消耗",
+      "REFUND": "退款返还",
+      "EXPIRED": "过期作废",
+      "SYSTEM_ADJUST": "系统调整"
+    }
+  },
+  "models": {
+    "sora2": {
+      "name": "Sora 2",
+      "description": "高质量视频生成，支持图片转视频"
+    },
+    "sora2pro": {
+      "name": "Sora 2 Pro",
+      "description": "专业级画质，多种质量选项"
+    }
+  }
+}

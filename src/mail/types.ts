@@ -1,0 +1,67 @@
+import type { Locale, Messages } from "next-intl";
+import WelcomeEmail from "./templates/welcome-email";
+import ResetPasswordEmail from "./templates/reset-password-email";
+import MagicLinkEmail from "./templates/magic-link-email";
+
+/**
+ * List all the email templates here
+ */
+export const EmailTemplates = {
+  welcome: WelcomeEmail,
+  resetPassword: ResetPasswordEmail,
+  magicLink: MagicLinkEmail,
+} as const;
+
+/**
+ * Email template types
+ */
+export type EmailTemplate = keyof typeof EmailTemplates;
+
+/**
+ * Base email component props
+ */
+export interface BaseEmailProps {
+  locale: Locale;
+  messages: Messages;
+}
+
+/**
+ * Common email sending parameters
+ */
+export interface SendEmailParams {
+  to: string;
+  subject: string;
+  text?: string;
+  html: string;
+  from?: string;
+}
+
+/**
+ * Result of sending an email
+ */
+export interface SendEmailResult {
+  success: boolean;
+  messageId?: string;
+  error?: unknown;
+}
+
+/**
+ * Parameters for sending an email using a template
+ */
+export interface SendTemplateParams {
+  to: string;
+  template: EmailTemplate;
+  context: Record<string, unknown>;
+  locale?: Locale;
+}
+
+/**
+ * Parameters for sending a raw email
+ */
+export interface SendRawEmailParams {
+  to: string;
+  subject: string;
+  html: string;
+  text?: string;
+  locale?: Locale;
+}
