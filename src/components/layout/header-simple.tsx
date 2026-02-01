@@ -44,6 +44,7 @@ export function HeaderSimple({
 
   const switchLocale = (nextLocale: string) => {
     router.push(pathname, { locale: nextLocale });
+    router.refresh();
   };
 
   const menuLabelMap: Record<string, string> = {

@@ -167,27 +167,27 @@ export function HowItWorks() {
                         {t(step.descKey)}
                       </p>
 
-                      {/* 统计数据 (如果有) */}
-                      {step.stat && (
-                        <motion.div
-                          initial={{ opacity: 0, height: 0 }}
-                          whileInView={{ opacity: 1, height: "auto" }}
-                          viewport={{ once: true }}
-                          transition={{ delay: 0.3, duration: 0.5 }}
-                          className="pt-4 border-t border-border/50"
-                        >
-                          <div className="flex items-center gap-2">
-                            <Sparkles className="h-4 w-4 text-primary" />
-                            <span className="text-sm text-muted-foreground">
-                              {t(step.stat.labelKey)}:
-                            </span>
-                            <span className="text-lg font-bold text-foreground">
-                              <NumberTicker value={step.stat.value} />
-                              {step.stat.suffix}
-                            </span>
-                          </div>
-                        </motion.div>
-                      )}
+                      {/*/!* 统计数据 (如果有) *!/*/}
+                      {/*{step.stat && (*/}
+                      {/*  <motion.div*/}
+                      {/*    initial={{ opacity: 0, height: 0 }}*/}
+                      {/*    whileInView={{ opacity: 1, height: "auto" }}*/}
+                      {/*    viewport={{ once: true }}*/}
+                      {/*    transition={{ delay: 0.3, duration: 0.5 }}*/}
+                      {/*    className="pt-4 border-t border-border/50"*/}
+                      {/*  >*/}
+                      {/*    <div className="flex items-center gap-2">*/}
+                      {/*      <Sparkles className="h-4 w-4 text-primary" />*/}
+                      {/*      <span className="text-sm text-muted-foreground">*/}
+                      {/*        {t(step.stat.labelKey)}:*/}
+                      {/*      </span>*/}
+                      {/*      <span className="text-lg font-bold text-foreground">*/}
+                      {/*        <NumberTicker value={step.stat.value} />*/}
+                      {/*        {step.stat.suffix}*/}
+                      {/*      </span>*/}
+                      {/*    </div>*/}
+                      {/*  </motion.div>*/}
+                      {/*)}*/}
 
                       {/* 悬停时的光晕效果 */}
                       <div

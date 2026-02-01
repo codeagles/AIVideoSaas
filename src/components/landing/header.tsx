@@ -72,9 +72,8 @@ export function LandingHeader({ user }: { user?: User | null }) {
 
   // Language switcher function
   const switchLocale = (newLocale: string) => {
-    startTransition(() => {
-      router.push(pathname, { locale: newLocale });
-    });
+    router.push(pathname, { locale: newLocale });
+    router.refresh();
   };
 
   return (
