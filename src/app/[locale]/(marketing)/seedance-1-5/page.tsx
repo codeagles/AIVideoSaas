@@ -174,8 +174,8 @@ export default async function ModelPage({ params }: ModelPageProps) {
                     {t("specs.camera")} / {t("specs.audio")}
                   </h3>
                   <div className="space-y-2">
-                    <p className="text-sm">{t("specs.cameraOptions")[0]}</p>
-                    <p className="text-sm">{t("specs.cameraOptions")[1]}</p>
+                    <p className="text-sm">{t.raw("specs.cameraOptions")[0]}</p>
+                    <p className="text-sm">{t.raw("specs.cameraOptions")[1]}</p>
                     <p className="text-sm">{t("specs.audioOption")}</p>
                   </div>
                 </div>
