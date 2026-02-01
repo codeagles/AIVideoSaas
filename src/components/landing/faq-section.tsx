@@ -18,28 +18,40 @@ interface FAQItem {
 
 const faqData: FAQItem[] = [
   {
-    questionKey: "template.question",
-    answerKey: "template.answer",
+    questionKey: "whatIs.question",
+    answerKey: "whatIs.answer",
   },
   {
-    questionKey: "deployment.question",
-    answerKey: "deployment.answer",
-  },
-  {
-    questionKey: "aiModels.question",
-    answerKey: "aiModels.answer",
-  },
-  {
-    questionKey: "credits.question",
-    answerKey: "credits.answer",
-  },
-  {
-    questionKey: "customization.question",
-    answerKey: "customization.answer",
+    questionKey: "models.question",
+    answerKey: "models.answer",
   },
   {
     questionKey: "payment.question",
     answerKey: "payment.answer",
+  },
+  {
+    questionKey: "failedVideo.question",
+    answerKey: "failedVideo.answer",
+  },
+  {
+    questionKey: "deviceLimit.question",
+    answerKey: "deviceLimit.answer",
+  },
+  {
+    questionKey: "commercial.question",
+    answerKey: "commercial.answer",
+  },
+  {
+    questionKey: "storage.question",
+    answerKey: "storage.answer",
+  },
+  {
+    questionKey: "creditsExpiry.question",
+    answerKey: "creditsExpiry.answer",
+  },
+  {
+    questionKey: "regenerate.question",
+    answerKey: "regenerate.answer",
   },
 ];
 

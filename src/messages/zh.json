@@ -34,7 +34,7 @@
     "startCreating": "免费开始创作",
     "viewExamples": "查看示例",
     "features": {
-      "fast": "闪电般快速",
+      "fast": "轻量快速",
       "easy": "简单易用",
       "ai": "AI 驱动"
     },
@@ -43,7 +43,7 @@
       "users": "位满意用户",
       "rating": "用户评分"
     },
-    "creditsHint": "免费积分开始 • 无需信用卡"
+    "creditsHint": "10 个免费积分开始 • 无需信用卡"
   },
   "Notifications": {
     "generationWillNotify": "生成时间较长，我们会在生成完成后通知你。",
@@ -87,7 +87,24 @@
     "subtitle": "AI 生成的精彩视频",
     "description": "探索我们社区使用 AI 视频生成创作的精彩作品。从电影级风景到产品动画，无所不能。",
     "ctaText": "准备好创作自己的杰作了吗？",
-    "ctaButton": "立即开始创作"
+    "ctaButton": "立即开始创作",
+    "videos": {
+      "stone": {
+        "tag": "Image to Video",
+        "title": "石像的\"腰\"酸吐槽",
+        "description": "两座古老的石像中，最大的那一座用流利英语抱怨腰疼"
+      },
+      "fruit": {
+        "tag": "Frame to Video",
+        "title": "鲜果现榨的神奇魔法",
+        "description": "水果施展魔法，将果汁变入玻璃瓶中"
+      },
+      "girl": {
+        "tag": "Text to Video",
+        "title": "穿越三百年的\"展品\"吐槽",
+        "description": "巴洛克画风少女发现镜头后，用播音腔疯狂吐槽"
+      }
+    }
   },
   "Features": {
     "badge": "强大功能",
@@ -137,7 +154,7 @@
     "title": "使用方法",
     "subtitle": "4 步创建您的视频",
     "description": "使用直观的视频创作工作流程，几分钟内即可开始",
-    "bottomHint": "无需信用卡 • 50 个免费积分开始",
+    "bottomHint": "无需信用卡 • 10 个免费积分开始",
     "steps": {
       "prompt": {
         "title": "描述您的视频",
@@ -165,7 +182,7 @@
     "title": "使用方法",
     "subtitle": "4 步创建您的视频",
     "description": "使用直观的视频创作工作流程，几分钟内即可开始",
-    "bottomHint": "无需信用卡 • 50 个免费积分开始",
+    "bottomHint": "无需信用卡 • 10 个免费积分开始",
     "steps": {
       "prompt": {
         "title": "描述您的视频",
@@ -196,7 +213,7 @@
     "getStarted": "免费开始",
     "learnMore": "了解更多",
     "benefits": {
-      "free": "50 个免费积分开始",
+      "free": "10 个免费积分开始",
       "noCard": "无需信用卡",
       "cancel": "随时取消",
       "support": "7x24 客户支持"
@@ -213,31 +230,43 @@
   },
   "FAQ": {
     "title": "常见问题",
-    "subtitle": "关于 VideoMint 模板的一切",
+    "subtitle": "关于 VideoMint 的一切",
     "contact": "还有其他问题？请联系我们",
-    "template": {
-      "question": "什么是 VideoMint 模板？",
-      "answer": "VideoMint 是一个生产级 AI 视频生成 SaaS 模板，基于 Next.js 15、React 19 和 Drizzle ORM 构建。它包含了启动自己的 AI 视频平台所需的一切：用户认证、积分系统、AI 供应商集成、支付处理，以及可直接定制的精美 UI。"
+    "whatIs": {
+      "question": "什么是 VideoMint？",
+      "answer": "VideoMint 是一款面向大众与商用场景的生产级 AI 视频生成工具，无需专业剪辑技能、后期经验，只需简单操作，即可在几分钟内快速生成高质量专业 AI 视频。平台支持文本生成视频、图片生成视频，同时可对已有视频素材进行画质增强、效果优化等处理，大幅降低视频创作的技术与时间成本。"
     },
-    "deployment": {
-      "question": "如何部署这个模板？",
-      "answer": "VideoMint 可以部署到 Vercel、Railway 或任何 Node.js 托管平台。只需连接您的 GitHub 仓库，设置所需的环境变量，然后部署即可。模板在 /docs 文件夹中包含详细文档，指导您完成整个过程。"
-    },
-    "aiModels": {
-      "question": "支持哪些 AI 模型？",
-      "answer": "模板目前支持 Evolink（Sora 2、Wan 2.6、Veo 3.1、Seedance）和 Kie.ai。模块化的供应商架构使添加更多 AI 供应商变得简单。您可以在 config/pricing-user.ts 文件中配置模型和价格。"
-    },
-    "credits": {
-      "question": "积分系统是如何工作的？",
-      "answer": "VideoMint 使用基于 FIFO 的积分系统，采用冻结/结算/释放模式。用户购买积分包或订阅，在生成视频时消耗积分。系统支持积分过期、退款和详细的交易记录。"
-    },
-    "customization": {
-      "question": "我可以自定义 UI 和品牌吗？",
-      "answer": "当然可以！模板基于 Tailwind CSS 4 和 shadcn/ui 组件构建，使定制变得简单直观。所有的颜色、字体和样式都可以通过 Tailwind 配置进行修改。组件结构模块化且有完善的文档。"
+    "models": {
+      "question": "平台支持哪些 AI 视频模型？",
+      "answer": "平台当前模板核心支持 Seedance 1.5 模型，可满足日常短视频、宣传片段、创意素材等多数生成需求。后续将持续迭代接入更多主流头部模型，规划包括 Sora 2、Wan 2.6、Veo 3.1 等，不断升级视频画质、流畅度与创作风格。"
     },
     "payment": {
-      "question": "集成了哪些支付提供商？",
-      "answer": "VideoMint 以 Creem 为主要支付集成提供商，Stripe 作为备选选项。两者都支持订阅和一次性购买。支付 webhook 系统会自动将积分分配到用户账户。"
+      "question": "如何支付、订阅与退款？",
+      "answer": "VideoMint 采用 Creem 作为官方支付渠道，平台内统一以积分作为视频生成的消耗单位。可灵活选择两种付费方式：一次性购买积分包，或开通订阅套餐自动获取积分，生成视频时根据时长、分辨率、模型类型扣除对应积分。订阅服务可在支付渠道内自行随时取消；一次性购买的积分包不支持退款，可在个人中心查看完整交易记录，实时核对所有消费明细。"
+    },
+    "failedVideo": {
+      "question": "视频生成失败会扣除积分吗？",
+      "answer": "不会。若因平台服务器、模型异常、系统故障等非用户操作原因导致视频生成失败，系统不会扣除任何积分，可直接重新提交任务，无需担心无效消耗。"
+    },
+    "deviceLimit": {
+      "question": "使用 VideoMint 有设备或系统限制吗？",
+      "answer": "无特殊限制。VideoMint 为纯网页端工具，无需下载安装客户端，电脑、平板、手机等可正常访问网页的设备，搭配稳定网络即可使用，兼容主流浏览器。"
+    },
+    "commercial": {
+      "question": "生成的视频可以商用？版权归谁？",
+      "answer": "合规使用场景下，通过 VideoMint 生成的视频商用版权归用户所有，可用于自媒体运营、企业宣传、个人作品集、电商展示等合法场景。严禁利用平台生成违规、侵权、虚假内容，违者平台将删除内容并封禁账号。"
+    },
+    "storage": {
+      "question": "生成的视频在哪里查看？能保存多久？",
+      "answer": "成功生成的视频统一存储在「我的创作集」中，支持在线预览与高清下载。平台会按套餐权益保留作品文件，建议重要视频及时下载至本地长期备份，避免意外丢失。"
+    },
+    "creditsExpiry": {
+      "question": "积分会过期吗？",
+      "answer": "一次性购买积分没有过期，订阅积分会在下个月生效时套餐内额度会重置。使用规则均会在对应购买页面清晰标注，同一账号内积分统一通用，可在个人中心查看积分余额与过期时间。"
+    },
+    "regenerate": {
+      "question": "生成效果不理想，可以重新生成吗？",
+      "answer": "可以。AI 视频生成效果与提示词精度、参数设置相关，若效果不符预期，可优化描述文字、调整画面配置后再次提交生成，重制任务按正常标准消耗积分。"
     }
   },
   "Footer": {
