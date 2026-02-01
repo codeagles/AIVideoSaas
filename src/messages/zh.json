@@ -746,7 +746,7 @@
       },
       "doNotTrack": {
         "title": "7. 请勿跟踪",
-        "content": "目前，业界没有处理“请勿跟踪”信号的标准，因此我们不响应“请勿跟踪”浏览器信号。"
+        "content": "目前，业界没有处理\"请勿跟踪\"信号的标准，因此我们不响应\"请勿跟踪\"浏览器信号。"
       },
       "retention": {
         "title": "8. Cookie 保留期限",
@@ -760,6 +760,96 @@
         "title": "10. 联系我们",
         "content": "如果您对我们使用 Cookie 有任何疑问，请联系我们："
       }
+    }
+  },
+  "Seedance": {
+    "pageTitle": "Seedance 1.5 Pro - 字节跳动 AI 视频生成模型",
+    "pageDescription": "Seedance 1.5 Pro 是字节跳动推出的新一代 AI 视频生成模型。通过文字描述、参考图片或首尾帧，快速生成高质量视频内容，支持多种生成模式。",
+    "hero": {
+      "badge": "由字节跳动提供支持",
+      "title": "Seedance 1.5 Pro",
+      "subtitle": "新一代 AI 视频生成"
+    },
+    "overview": {
+      "title": "关于 Seedance 1.5 Pro",
+      "description": "Seedance 1.5 Pro 是由字节跳动（ByteDance）推出的新一代 AI 视频生成模型。通过简单的文字描述、上传参考图片或指定首尾帧，即可快速生成高质量的视频内容。该模型支持多种生成模式，包括文生视频、图生视频和首尾帧生视频，能够满足不同场景的创作需求。"
+    },
+    "features": {
+      "title": "核心能力",
+      "textToVideo": {
+        "title": "文生视频",
+        "description": "只需输入文字描述，Seedance 1.5 Pro 即可根据您的创意生成对应的视频内容。支持最长 2500 字符的详细描述，让您的创意表达更加精确。"
+      },
+      "imageToVideo": {
+        "title": "图生视频",
+        "description": "上传 1 张参考图片作为起点，模型将基于图片内容和文字描述生成动态视频。支持 JPEG、PNG、WEBP 格式，单张图片最大 10MB。"
+      },
+      "frameToVideo": {
+        "title": "首尾帧生成",
+        "description": "上传 2 张图片作为视频的起点和终点，Seedance 将智能生成连接两个关键帧的平滑过渡视频。特别适合状态转换、角色换装、自然场景流转等场景。"
+      }
+    },
+    "specs": {
+      "title": "输出规格",
+      "duration": "视频时长",
+      "resolution": "分辨率",
+      "aspectRatio": "宽高比",
+      "audio": "音效",
+      "camera": "镜头控制",
+      "durationOptions": ["4 秒", "8 秒", "12 秒"],
+      "resolutionOptions": ["480P 标清", "720P 高清"],
+      "aspectRatioOptions": ["1:1", "16:9", "9:16", "4:3", "3:4", "21:9"],
+      "audioOption": "生成视频音效（可选）",
+      "cameraOptions": ["固定镜头", "动态运镜"]
+    },
+    "useCases": {
+      "title": "适用场景",
+      "description": "适用于多种创作场景",
+      "items": [
+        "社交媒体内容创作",
+        "产品展示与广告",
+        "创意概念演示",
+        "动画制作与分镜预览",
+        "状态转换类视频"
+      ]
+    },
+    "promptTips": {
+      "title": "提示词写作技巧",
+      "description": "如何编写有效的提示词以获得更好的效果",
+      "tips": [
+        {
+          "title": "描述主体",
+          "description": "明确说明画面中的主体对象，包括外观特征、表情动作"
+        },
+        {
+          "title": "环境背景",
+          "description": "描述场景环境、光线条件、时间氛围"
+        },
+        {
+          "title": "运动描述",
+          "description": "详细描述主体的运动轨迹和速度"
+        },
+        {
+          "title": "风格指定",
+          "description": "说明想要的视觉风格，如写实、卡通、电影感等"
+        },
+        {
+          "title": "镜头语言",
+          "description": "描述镜头运动方式，如推拉、摇移、环绕等"
+        }
+      ],
+      "examples": {
+        "title": "示例提示词",
+        "textToVideo": "一只橘色的猫咪慵懒地躺在阳光照射的窗台上，眯着眼睛打着哈欠，尾巴轻轻晃动。温暖的午后阳光从窗户洒进来，营造出舒适惬意的氛围。",
+        "imageToVideo": "猫咪缓缓站起身，伸了一个大大的懒腰，然后慢悠悠地走向镜头，步伐优雅从容。",
+        "frameToVideo": "画面中的花朵从含苞待放到完全绽放，自然的光线变化，蝴蝶飞舞其中，营造出生机盎然的春日景象。"
+      }
+    },
+    "cta": {
+      "title": "准备好创作了吗？",
+      "description": "立即使用 Seedance 1.5 Pro 生成精彩的视频",
+      "imageToVideo": "尝试图生视频",
+      "textToVideo": "尝试文生视频"
     }
   }
 }

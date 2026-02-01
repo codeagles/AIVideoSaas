@@ -733,5 +733,95 @@
         "content": "If you have questions about our use of cookies, please contact us:"
       }
     }
+  },
+  "Seedance": {
+    "pageTitle": "Seedance 1.5 Pro - AI Video Generation Model by ByteDance",
+    "pageDescription": "Seedance 1.5 Pro is ByteDance's next-generation AI video generation model. Create stunning videos from text, images, or keyframes with multiple generation modes.",
+    "hero": {
+      "badge": "Powered by ByteDance",
+      "title": "Seedance 1.5 Pro",
+      "subtitle": "Next-Generation AI Video Generation"
+    },
+    "overview": {
+      "title": "About Seedance 1.5 Pro",
+      "description": "Seedance 1.5 Pro is ByteDance's next-generation AI video generation model. Simply enter text descriptions or upload reference images to quickly generate high-quality video content. The model supports multiple generation modes including Text-to-Video, Image-to-Video, and Frame-to-Video to meet various creative needs."
+    },
+    "features": {
+      "title": "Core Capabilities",
+      "textToVideo": {
+        "title": "Text-to-Video",
+        "description": "Enter a text description and Seedance 1.5 Pro will generate corresponding video content based on your creative input. Supports detailed descriptions up to 2,500 characters for precise expression."
+      },
+      "imageToVideo": {
+        "title": "Image-to-Video",
+        "description": "Upload a reference image as a starting point. The model generates dynamic video based on the image content and your text description. Supports JPEG, PNG, WEBP formats with single file max 10MB."
+      },
+      "frameToVideo": {
+        "title": "Frame-to-Video",
+        "description": "Upload 2 images as the start and end points of your video. Seedance intelligently generates smooth transition video connecting the two keyframes. Perfect for state transitions, character changes, and natural scene flow."
+      }
+    },
+    "specs": {
+      "title": "Output Specifications",
+      "duration": "Duration",
+      "resolution": "Resolution",
+      "aspectRatio": "Aspect Ratio",
+      "audio": "Audio",
+      "camera": "Camera",
+      "durationOptions": ["4 seconds", "8 seconds", "12 seconds"],
+      "resolutionOptions": ["480P SD", "720P HD"],
+      "aspectRatioOptions": ["1:1", "16:9", "9:16", "4:3", "3:4", "21:9"],
+      "audioOption": "Generate video sound effects (optional)",
+      "cameraOptions": ["Fixed lens", "Dynamic movement"]
+    },
+    "useCases": {
+      "title": "Use Cases",
+      "description": "Perfect for various creative scenarios",
+      "items": [
+        "Social media content creation",
+        "Product showcases and advertising",
+        "Creative concept demonstrations",
+        "Animation production and storyboard previews",
+        "State transition videos"
+      ]
+    },
+    "promptTips": {
+      "title": "Prompt Writing Tips",
+      "description": "How to write effective prompts for better results",
+      "tips": [
+        {
+          "title": "Describe the Subject",
+          "description": "Clearly specify the main subject, including appearance features and expressions"
+        },
+        {
+          "title": "Environment & Background",
+          "description": "Describe the scene environment, lighting conditions, and atmosphere"
+        },
+        {
+          "title": "Motion Description",
+          "description": "Detail the subject's movement trajectory and speed"
+        },
+        {
+          "title": "Style Specification",
+          "description": "Indicate the desired visual style: realistic, cartoon, cinematic, etc."
+        },
+        {
+          "title": "Camera Language",
+          "description": "Describe camera movements: push, pull, pan, dolly, etc."
+        }
+      ],
+      "examples": {
+        "title": "Example Prompts",
+        "textToVideo": "A fluffy orange cat lazily lying on a sunlit windowsill, squinting its eyes and yawning, tail gently swaying. Warm afternoon sunlight streams through the window, creating a cozy and comfortable atmosphere.",
+        "imageToVideo": "The cat slowly stands up, stretches its body, then walks toward the camera with graceful steps.",
+        "frameToVideo": "A flower gradually blooming from bud to full bloom, natural lighting changes with butterflies flying around."
+      }
+    },
+    "cta": {
+      "title": "Ready to Create?",
+      "description": "Start generating stunning videos with Seedance 1.5 Pro",
+      "imageToVideo": "Try Image to Video",
+      "textToVideo": "Try Text to Video"
+    }
   }
 }
