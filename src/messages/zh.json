@@ -535,5 +535,231 @@
     "copyLink": "复制链接",
     "removeFromHistory": "从历史中移除",
     "generationFailed": "生成失败"
+  },
+  "Privacy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新",
+    "sections": {
+      "introduction": {
+        "title": "1. 引言",
+        "content": "欢迎使用 VideoMint。我们尊重您的隐私，并承诺保护您的个人数据。本隐私政策说明了我们如何在您使用我们的 AI 视频生成服务时收集、使用、披露和保护您的信息。"
+      },
+      "dataCollect": {
+        "title": "2. 我们收集的数据",
+        "intro": "我们收集以下类型的信息：",
+        "items": {
+          "account": "账户信息：创建账户时的姓名、电子邮件地址和配置文件信息",
+          "usage": "使用数据：关于您如何使用我们的服务的信息，包括提示词、生成的视频和交互模式",
+          "payment": "支付信息：通过我们的支付提供商处理的账单详情（我们不存储完整的支付卡号）",
+          "technical": "技术数据：IP 地址、浏览器类型、设备信息和 Cookie",
+          "content": "用户内容：您上传的用于视频生成的文本提示词和图片"
+        }
+      },
+      "dataUse": {
+        "title": "3. 我们如何使用您的数据",
+        "intro": "我们使用您的数据来：",
+        "items": {
+          "service": "提供和改进我们的 AI 视频生成服务",
+          "account": "管理您的账户和处理交易",
+          "communication": "向您发送关于账户和服务的重要更新",
+          "improvement": "分析使用模式以改善用户体验和服务质量",
+          "legal": "遵守法律义务并执行我们的条款"
+        }
+      },
+      "dataSharing": {
+        "title": "4. 数据共享",
+        "content": "我们不出售您的个人数据。我们可能会与协助运营我们平台的服务提供商、处理交易的支付提供商以及法律要求的执法部门共享您的数据。"
+      },
+      "dataSecurity": {
+        "title": "5. 数据安全",
+        "content": "我们实施适当的技术和组织安全措施，以保护您的个人信息免受未经授权的访问、更改、披露或破坏。"
+      },
+      "userRights": {
+        "title": "6. 您的权利",
+        "intro": "您享有以下权利：",
+        "items": {
+          "access": "访问和接收您个人数据的副本",
+          "rectification": "要求更正不准确或不完整的数据",
+          "deletion": "要求删除您的个人数据",
+          "portability": "要求将您的数据传输到另一个服务",
+          "withdraw": "在基于同意的处理中随时撤回同意"
+        }
+      },
+      "dataRetention": {
+        "title": "7. 数据保留",
+        "content": "我们会在您的账户活跃期间或需要为您提供服务时保留您的个人数据。生成的视频和提示词可能会在有限期限内保留，以遵守法律义务。"
+      },
+      "children": {
+        "title": "8. 儿童隐私",
+        "content": "我们的服务不面向 13 岁以下的用户。我们不会故意收集 13 岁以下儿童的个人信息。"
+      },
+      "changes": {
+        "title": "9. 政策变更",
+        "content": "我们可能会不时更新本隐私政策。我们会通过在此页面上发布新政策并更新最后更新日期来通知您任何重大变更。"
+      },
+      "contact": {
+        "title": "10. 联系我们",
+        "content": "如果您对本隐私政策有任何疑问，请联系我们："
+      }
+    }
+  },
+  "Terms": {
+    "title": "服务条款",
+    "lastUpdated": "最后更新",
+    "sections": {
+      "acceptance": {
+        "title": "1. 接受条款",
+        "content": "通过访问和使用 VideoMint，您即接受并同意受本协议条款和规定的约束。如果您不同意这些条款，请不要使用我们的服务。"
+      },
+      "account": {
+        "title": "2. 账户要求",
+        "intro": "要使用我们的服务，您必须：",
+        "items": {
+          "age": "年满 13 岁",
+          "accurate": "提供准确完整的注册信息",
+          "security": "维护您账户凭证的安全性",
+          "activity": "对在您账户下进行的所有活动负责"
+        }
+      },
+      "service": {
+        "title": "3. 服务描述",
+        "content": "VideoMint 提供一个 AI 驱动的视频生成平台，允许用户从文本提示词和图片创建视频。我们保留随时修改、暂停或终止服务任何方面的权利。"
+      },
+      "credits": {
+        "title": "4. 积分和支付",
+        "intro": "我们的服务基于积分系统运行：",
+        "items": {
+          "nonRefundable": "购买的积分除法律要求外不予退还",
+          "expiration": "积分可能根据您的购买条款过期",
+          "transfer": "积分不可在账户之间转让",
+          "usage": "所有视频生成都会从您的账户中扣除积分"
+        }
+      },
+      "content": {
+        "title": "5. 可接受的使用",
+        "intro": "您同意不使用我们的服务来：",
+        "prohibited": "禁止的活动包括：",
+        "prohibitedItems": {
+          "illegal": "生成非法内容或违反任何法律的内容",
+          "harmful": "创建有害、暴力或危险的内容",
+          "infringing": "侵犯他人的知识产权",
+          "misleading": "生成欺骗性或误导性内容",
+          "spam": "创建垃圾邮件或自动化内容",
+          "harassing": "骚扰、威胁或侵犯他人权利"
+        }
+      },
+      "intellectualProperty": {
+        "title": "6. 知识产权",
+        "intro": "关于知识产权：",
+        "items": {
+          "ownership": "您保留使用我们的服务创建内容的所有权",
+          "license": "您授予我们使用您的内容以提供服务的许可",
+          "generated": "生成的视频归您所有，可根据我们的许可条款使用"
+        }
+      },
+      "termination": {
+        "title": "7. 终止",
+        "content": "我们可能在我们认为适当的情况下终止或暂停您的账户和对服务的访问，恕不事先通知，对于我们认为违反本服务条款或对其他用户、我们的服务或第三方有害的行为。"
+      },
+      "disclaimer": {
+        "title": "8. 免责声明",
+        "content": "服务按\"原样\"和\"按可提供情况\"提供。VideoMint 对服务的准确性、可靠性或可用性不作任何明示或暗示的保证。"
+      },
+      "limitation": {
+        "title": "9. 责任限制",
+        "content": "在任何情况下，VideoMint 或其供应商均不对因使用或无法使用我们网站上的材料而造成的损害承担责任，即使我们已被告知此类损害的可能性。"
+      },
+      "governing": {
+        "title": "10. 适用法律",
+        "content": "这些条款应按照适用法律解释和执行，不考虑法律冲突原则。"
+      },
+      "changes": {
+        "title": "11. 条款变更",
+        "content": "我们保留随时修改这些条款的权利。在任何更改后继续使用服务即表示接受新条款。"
+      },
+      "contact": {
+        "title": "12. 联系方式",
+        "content": "如果您对这些服务条款有任何疑问，请联系我们："
+      }
+    }
+  },
+  "Cookie": {
+    "title": "Cookie 政策",
+    "lastUpdated": "最后更新",
+    "sections": {
+      "introduction": {
+        "title": "1. 引言",
+        "content": "本 Cookie 政策说明 VideoMint 在您使用我们的服务时如何使用 Cookie 和类似的跟踪技术。本政策应与我们的隐私政策一起阅读。"
+      },
+      "whatAre": {
+        "title": "2. 什么是 Cookie",
+        "content": "Cookie 是存储在您设备上的小型文本文件，当您访问网站时创建。它们帮助网站正常运行，并向网站所有者提供分析。类似的技术包括信标、像素和本地存储。"
+      },
+      "types": {
+        "title": "3. 我们使用的 Cookie 类型",
+        "intro": "我们使用以下类别的 Cookie：",
+        "essential": {
+          "title": "必要的 Cookie",
+          "content": "服务运行所必需的。它们支持账户认证、安全和网络管理等核心功能。这些无法禁用。"
+        },
+        "performance": {
+          "title": "性能 Cookie",
+          "content": "通过收集有关页面访问和错误报告的匿名信息，帮助我们了解访问者如何与我们的服务交互。"
+        },
+        "functionality": {
+          "title": "功能 Cookie",
+          "content": "允许我们记住您的偏好，例如语言设置、主题选择和自定义选项。"
+        },
+        "marketing": {
+          "title": "营销 Cookie",
+          "content": "用于跨网站跟踪访问者以显示相关广告。我们不会将这些用于个性化广告。"
+        }
+      },
+      "specific": {
+        "title": "4. 我们使用的具体 Cookie",
+        "intro": "我们使用的 Cookie 示例：",
+        "items": {
+          "session": "会话 Cookie，用于在您访问期间保持登录状态",
+          "auth": "认证 Cookie，用于验证您的账户",
+          "preferences": "偏好 Cookie，用于记住您的设置",
+          "analytics": "分析 Cookie，用于了解服务使用情况",
+          "payment": "用于安全处理支付的 Cookie"
+        }
+      },
+      "thirdParty": {
+        "title": "5. 第三方 Cookie",
+        "intro": "一些 Cookie 由出现在我们页面上的第三方服务放置：",
+        "items": {
+          "analytics": "分析服务（如 PostHog）用于使用统计",
+          "payment": "支付处理器用于安全交易处理",
+          "auth": "身份验证提供商用于社交登录功能"
+        }
+      },
+      "control": {
+        "title": "6. 管理 Cookie",
+        "intro": "您可以通过以下方式控制 Cookie：",
+        "items": {
+          "browser": "您的网络浏览器设置以阻止或删除 Cookie",
+          "settings": "首次访问时的 Cookie 同意横幅",
+          "cookieManager": "第三方 Cookie 管理工具"
+        }
+      },
+      "doNotTrack": {
+        "title": "7. 请勿跟踪",
+        "content": "目前，业界没有处理“请勿跟踪”信号的标准，因此我们不响应“请勿跟踪”浏览器信号。"
+      },
+      "retention": {
+        "title": "8. Cookie 保留期限",
+        "content": "会话 Cookie 会在您关闭浏览器时删除。持久性 Cookie 会根据 Cookie 中指定的期限保留在您的设备上（通常最多 12 个月）。"
+      },
+      "updates": {
+        "title": "9. 政策更新",
+        "content": "我们可能会不时更新本 Cookie 政策，以反映技术、立法或我们业务实践的变化。"
+      },
+      "contact": {
+        "title": "10. 联系我们",
+        "content": "如果您对我们使用 Cookie 有任何疑问，请联系我们："
+      }
+    }
   }
 }

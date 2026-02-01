@@ -507,5 +507,231 @@
     "copyLink": "Copy link",
     "removeFromHistory": "Remove from history",
     "generationFailed": "Generation Failed"
+  },
+  "Privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "content": "Welcome to VideoMint. We respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our AI video generation service."
+      },
+      "dataCollect": {
+        "title": "2. Data We Collect",
+        "intro": "We collect the following types of information:",
+        "items": {
+          "account": "Account Information: Name, email address, and profile information when you create an account",
+          "usage": "Usage Data: Information about how you use our service, including prompts, generated videos, and interaction patterns",
+          "payment": "Payment Information: Billing details processed through our payment providers (we do not store full payment card numbers)",
+          "technical": "Technical Data: IP address, browser type, device information, and cookies",
+          "content": "User Content: Text prompts and images you upload for video generation"
+        }
+      },
+      "dataUse": {
+        "title": "3. How We Use Your Data",
+        "intro": "We use your data to:",
+        "items": {
+          "service": "Provide and improve our AI video generation services",
+          "account": "Manage your account and process transactions",
+          "communication": "Send you important updates about your account and service",
+          "improvement": "Analyze usage patterns to improve user experience and service quality",
+          "legal": "Comply with legal obligations and enforce our terms"
+        }
+      },
+      "dataSharing": {
+        "title": "4. Data Sharing",
+        "content": "We do not sell your personal data. We may share your data with service providers who assist in operating our platform, payment processors for transaction handling, and law enforcement when required by law."
+      },
+      "dataSecurity": {
+        "title": "5. Data Security",
+        "content": "We implement appropriate technical and organizational security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction."
+      },
+      "userRights": {
+        "title": "6. Your Rights",
+        "intro": "You have the following rights:",
+        "items": {
+          "access": "Access and receive a copy of your personal data",
+          "rectification": "Request correction of inaccurate or incomplete data",
+          "deletion": "Request deletion of your personal data",
+          "portability": "Request transfer of your data to another service",
+          "withdraw": "Withdraw consent at any time where processing is based on consent"
+        }
+      },
+      "dataRetention": {
+        "title": "7. Data Retention",
+        "content": "We retain your personal data for as long as your account is active or as needed to provide you services. Generated videos and prompts may be retained for a limited period to comply with legal obligations."
+      },
+      "children": {
+        "title": "8. Children's Privacy",
+        "content": "Our service is not intended for users under the age of 13. We do not knowingly collect personal information from children under 13."
+      },
+      "changes": {
+        "title": "9. Changes to This Policy",
+        "content": "We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new policy on this page and updating the Last Updated date."
+      },
+      "contact": {
+        "title": "10. Contact Us",
+        "content": "If you have questions about this Privacy Policy, please contact us:"
+      }
+    }
+  },
+  "Terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "acceptance": {
+        "title": "1. Acceptance of Terms",
+        "content": "By accessing and using VideoMint, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to these terms, please do not use our service."
+      },
+      "account": {
+        "title": "2. Account Requirements",
+        "intro": "To use our service, you must:",
+        "items": {
+          "age": "Be at least 13 years of age",
+          "accurate": "Provide accurate and complete registration information",
+          "security": "Maintain the security of your account credentials",
+          "activity": "Be responsible for all activities conducted under your account"
+        }
+      },
+      "service": {
+        "title": "3. Description of Service",
+        "content": "VideoMint provides an AI-powered video generation platform that allows users to create videos from text prompts and images. We reserve the right to modify, suspend, or discontinue any aspect of the service at any time."
+      },
+      "credits": {
+        "title": "4. Credits and Payments",
+        "intro": "Our service operates on a credit-based system:",
+        "items": {
+          "nonRefundable": "Credits purchased are non-refundable except as required by law",
+          "expiration": "Credits may expire according to the terms of your purchase",
+          "transfer": "Credits are non-transferable between accounts",
+          "usage": "All video generations deduct credits from your account"
+        }
+      },
+      "content": {
+        "title": "5. Acceptable Use",
+        "intro": "You agree not to use our service to:",
+        "prohibited": "Prohibited activities include:",
+        "prohibitedItems": {
+          "illegal": "Generate illegal content or content that violates any laws",
+          "harmful": "Create harmful, violent, or dangerous content",
+          "infringing": "Infringe on the intellectual property rights of others",
+          "misleading": "Generate deceptive or misleading content",
+          "spam": "Create spam or automated content",
+          "harassing": "Harass, threaten, or violate the rights of others"
+        }
+      },
+      "intellectualProperty": {
+        "title": "6. Intellectual Property",
+        "intro": "Regarding intellectual property rights:",
+        "items": {
+          "ownership": "You retain ownership of the content you create using our service",
+          "license": "You grant us a license to use your content for providing the service",
+          "generated": "Generated videos are yours to use according to our licensing terms"
+        }
+      },
+      "termination": {
+        "title": "7. Termination",
+        "content": "We may terminate or suspend your account and access to the service at our sole discretion, without prior notice, for conduct that we believe violates these Terms of Service or is harmful to other users, our service, or third parties."
+      },
+      "disclaimer": {
+        "title": "8. Disclaimer",
+        "content": "The service is provided 'as is' and 'as available'. VideoMint makes no warranties, expressed or implied, regarding the accuracy, reliability, or availability of the service."
+      },
+      "limitation": {
+        "title": "9. Limitation of Liability",
+        "content": "In no event shall VideoMint or its suppliers be liable for any damages arising out of the use or inability to use the materials on our website, even if we have been notified of the possibility of such damage."
+      },
+      "governing": {
+        "title": "10. Governing Law",
+        "content": "These terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles."
+      },
+      "changes": {
+        "title": "11. Changes to Terms",
+        "content": "We reserve the right to modify these terms at any time. Continued use of the service after any changes constitutes acceptance of the new terms."
+      },
+      "contact": {
+        "title": "12. Contact Information",
+        "content": "For questions about these Terms of Service, please contact us:"
+      }
+    }
+  },
+  "Cookie": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated",
+    "sections": {
+      "introduction": {
+        "title": "1. Introduction",
+        "content": "This Cookie Policy explains how VideoMint uses cookies and similar tracking technologies when you use our service. This policy should be read together with our Privacy Policy."
+      },
+      "whatAre": {
+        "title": "2. What Are Cookies",
+        "content": "Cookies are small text files that are stored on your device when you visit a website. They help the website function properly and provide analytics to website owners. Similar technologies include web beacons, pixels, and local storage."
+      },
+      "types": {
+        "title": "3. Types of Cookies We Use",
+        "intro": "We use the following categories of cookies:",
+        "essential": {
+          "title": "Essential Cookies",
+          "content": "Required for the operation of our service. They enable core functionality such as account authentication, security, and network management. These cannot be disabled."
+        },
+        "performance": {
+          "title": "Performance Cookies",
+          "content": "Help us understand how visitors interact with our service by collecting anonymous information about page visits and error reports."
+        },
+        "functionality": {
+          "title": "Functionality Cookies",
+          "content": "Allow us to remember your preferences, such as language settings, theme choices, and customization options."
+        },
+        "marketing": {
+          "title": "Marketing Cookies",
+          "content": "Used to track visitors across websites to display relevant advertisements. We do not use these for personalized advertising."
+        }
+      },
+      "specific": {
+        "title": "4. Specific Cookies We Use",
+        "intro": "Examples of cookies we use:",
+        "items": {
+          "session": "Session cookies to keep you logged in during your visit",
+          "auth": "Authentication cookies to verify your account",
+          "preferences": "Preference cookies to remember your settings",
+          "analytics": "Analytics cookies to understand service usage",
+          "payment": "Secure cookies for payment processing"
+        }
+      },
+      "thirdParty": {
+        "title": "5. Third-Party Cookies",
+        "intro": "Some cookies are placed by third-party services that appear on our pages:",
+        "items": {
+          "analytics": "Analytics services (e.g., PostHog) for usage statistics",
+          "payment": "Payment processors for secure transaction handling",
+          "auth": "Authentication providers for social login features"
+        }
+      },
+      "control": {
+        "title": "6. Managing Cookies",
+        "intro": "You can control cookies through:",
+        "items": {
+          "browser": "Your web browser settings to block or delete cookies",
+          "settings": "Our cookie consent banner when you first visit",
+          "cookieManager": "Third-party cookie management tools"
+        }
+      },
+      "doNotTrack": {
+        "title": "7. Do Not Track",
+        "content": "Currently, there is no industry standard for handling Do Not Track signals, so we do not respond to Do Not Track browser signals."
+      },
+      "retention": {
+        "title": "8. Cookie Retention",
+        "content": "Session cookies are deleted when you close your browser. Persistent cookies remain on your device for the duration specified in the cookie (typically up to 12 months)."
+      },
+      "updates": {
+        "title": "9. Updates to This Policy",
+        "content": "We may update this Cookie Policy from time to time to reflect changes in technology, legislation, or our business practices."
+      },
+      "contact": {
+        "title": "10. Contact Us",
+        "content": "If you have questions about our use of cookies, please contact us:"
+      }
+    }
   }
 }

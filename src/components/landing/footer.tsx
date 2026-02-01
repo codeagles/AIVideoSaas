@@ -21,15 +21,15 @@ export function LandingFooter() {
         { title: "Pricing", href: "/pricing" },
       ],
     },
-    {
-      title: t('company'),
-      links: [
-        { title: "About", href: "/about" },
-        { title: "Blog", href: "/blog" },
-        { title: "Careers", href: "/careers" },
-        { title: "Contact", href: "/contact" },
-      ],
-    },
+    // {
+    //   title: t('company'),
+    //   links: [
+    //     { title: "About", href: "/about" },
+    //     { title: "Blog", href: "/blog" },
+    //     { title: "Careers", href: "/careers" },
+    //     { title: "Contact", href: "/contact" },
+    //   ],
+    // },
     {
       title: t('legal'),
       links: [

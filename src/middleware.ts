@@ -16,6 +16,17 @@ const legacyRedirects: Record<string, string> = {
 };
 
 /**
+ * Legal pages redirects
+ * Maps short URLs to full paths
+ */
+const legalRedirects: Record<string, string> = {
+  "/privacy": "/privacy-policy",
+  "/terms": "/terms-of-service",
+  "/cookies": "/cookie-policy",
+  "/cookie": "/cookie-policy",
+};
+
+/**
  * Next-intl middleware with legacy dashboard redirects
  *
  * This middleware handles:
@@ -42,10 +53,35 @@ export default function middleware(request: NextRequest) {
     }
   }
 
+  // Check for legal pages redirects (without locale prefix)
+  // e.g., /privacy -> /privacy-policy
+  for (const [from, to] of Object.entries(legalRedirects)) {
+    if (pathname === from || pathname.startsWith(from + "/")) {
+      const rest = pathname.slice(from.length);
+      const url = request.nextUrl.clone();
+      url.pathname = to + rest;
+      return NextResponse.redirect(url);
+    }
+  }
+
   // Check for legacy dashboard routes (with locale prefix)
   // e.g., /en/dashboard -> /en/image-to-video
   for (const locale of routing.locales) {
     for (const [from, to] of Object.entries(legacyRedirects)) {
+      const localeFrom = `/${locale}${from}`;
+      if (pathname === localeFrom || pathname.startsWith(localeFrom + "/")) {
+        const rest = pathname.slice(localeFrom.length);
+        const url = request.nextUrl.clone();
+        url.pathname = `/${locale}${to}${rest}`;
+        return NextResponse.redirect(url);
+      }
+    }
+  }
+
+  // Check for legal pages redirects (with locale prefix)
+  // e.g., /en/privacy -> /en/privacy-policy
+  for (const locale of routing.locales) {
+    for (const [from, to] of Object.entries(legalRedirects)) {
       const localeFrom = `/${locale}${from}`;
       if (pathname === localeFrom || pathname.startsWith(localeFrom + "/")) {
         const rest = pathname.slice(localeFrom.length);

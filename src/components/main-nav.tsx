@@ -4,7 +4,6 @@ import React from "react";
 import { useTranslations } from "next-intl";
 
 import * as Icons from "@/components/ui/icons";
-import { DocumentGuide } from "@/components/document-guide";
 import { MobileNav } from "@/components/mobile-nav";
 
 import { LocaleLink } from "@/i18n/navigation";
@@ -35,16 +34,6 @@ export function MainNav({
           <div className="text-3xl">VideoMint</div>
         </LocaleLink>
 
-        <a
-          href="https://docs.videomint.app"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="ml-4 hidden md:flex lg:flex xl:flex"
-        >
-          <DocumentGuide>
-            {intro}
-          </DocumentGuide>
-        </a>
       </div>
 
       <button
