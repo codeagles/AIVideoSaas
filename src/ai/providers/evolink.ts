@@ -19,7 +19,7 @@ export class EvolinkProvider implements AIVideoProvider {
   }
 
   async createTask(params: VideoGenerationParams): Promise<VideoTaskResponse> {
-    const internalModelId = params.model || "sora-2";
+    const internalModelId = params.model || "seedance-1.5-pro";
     const providerModelId = getProviderModelId(
       internalModelId,
       "evolink",

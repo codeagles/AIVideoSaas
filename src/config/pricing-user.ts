@@ -245,28 +245,6 @@ export const CREDIT_PACKAGES: CreditPackageConfig[] = [
  * - qualityMultiplier: 画质乘数（1080p vs 720p）
  */
 export const VIDEO_MODEL_PRICING: Record<string, VideoModelPricing> = {
-  /** Sora 2 Lite - OpenAI */
-  "sora-2": {
-    baseCredits: 2,       // 10秒 = 2积分 (1.6 Credits 向上取整)
-    perSecond: 0,         // 固定价格
-    enabled: true,
-  },
-
-  /** Wan 2.6 */
-  "wan2.6": {
-    baseCredits: 25,      // 5秒 720p = 25积分
-    perSecond: 5,         // 每秒 = 5积分 (10秒 = 25 + 5×5 = 50积分)
-    qualityMultiplier: 1.67, // 1080p = 720p × 1.67 (41.75 / 25 ≈ 1.67)
-    enabled: true,
-  },
-
-  /** Veo 3.1 Fast Lite - Google */
-  "veo-3.1": {
-    baseCredits: 10,      // 固定 10积分 (9.6 Credits 向上取整)
-    perSecond: 0,
-    enabled: true,
-  },
-
   /** Seedance 1.5 Pro - 按秒计费（默认有音频） */
   "seedance-1.5-pro": {
     baseCredits: 0,       // 不使用 baseCredits

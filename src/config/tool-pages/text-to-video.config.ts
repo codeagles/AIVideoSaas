@@ -7,14 +7,13 @@ export const textToVideoConfig: ToolPageConfig = {
   // SEO 配置
   seo: {
     title: "Text to Video - Create Videos from Text with AI",
-    description: "Transform your text descriptions into stunning videos using AI. Simply describe what you want, and watch Sora 2, Veo 3.1, and other AI models bring your vision to life.",
+    description: "Transform your text descriptions into stunning videos using Seedance 1.5 Pro AI. Simply describe what you want, and watch AI bring your vision to life.",
     keywords: [
       "text to video",
       "ai video generator",
       "video from text",
       "ai video creation",
-      "sora 2",
-      "veo 3.1",
+      "seedance",
       "text to video ai",
     ],
     ogImage: "/og-text-to-video.jpg",
@@ -33,8 +32,8 @@ export const textToVideoConfig: ToolPageConfig = {
     },
 
     models: {
-      available: ["sora-2", "veo-3.1", "wan2.6", "seedance-1.5-pro"],
-      default: "sora-2",
+      available: ["seedance-1.5-pro"],
+      default: "seedance-1.5-pro",
     },
 
     features: {
@@ -48,11 +47,11 @@ export const textToVideoConfig: ToolPageConfig = {
     settings: {
       showDuration: true,
       showAspectRatio: true,
-      showQuality: false,
+      showQuality: true,
       showOutputNumber: false,
       showAudioGeneration: true,
 
-      durations: [5, 10, 15],
+      durations: [4, 5, 6, 8, 10, 12],
       aspectRatios: ["16:9", "9:16", "1:1", "4:3", "3:4", "21:9"],
     },
   },
@@ -86,18 +85,14 @@ export const textToVideoConfig: ToolPageConfig = {
 
     features: [
       "Simply describe what you want to see",
-      "Access to cutting-edge AI models (Sora 2, Veo 3.1, etc.)",
+      "Access to cutting-edge AI model (Seedance 1.5 Pro)",
       "Cinematic quality up to 1080p",
       "Generate audio and sound effects automatically",
       "Multiple aspect ratios for any platform",
     ],
 
     supportedModels: [
-      { name: "Sora 2", provider: "OpenAI", color: "#000000" },
-      { name: "Veo 3.1", provider: "Google", color: "#4285f4" },
-      { name: "Wan 2.6", provider: "Alibaba", color: "#8b5cf6" },
       { name: "Seedance 1.5", provider: "ByteDance", color: "#ec4899" },
-      { name: "Kling 2", provider: "Kuaishou", color: "#f59e0b" },
     ],
 
     stats: {
