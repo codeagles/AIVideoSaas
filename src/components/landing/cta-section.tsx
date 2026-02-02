@@ -186,30 +186,30 @@ export function CTASection() {
                   </div>
 
                   {/* 社交证明 - 头像 */}
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.3 }}
-                    className="flex items-center gap-4 pt-4"
-                  >
-                    <AvatarCircles
-                      numPeople={500000}
-                      avatarUrls={avatarUrls}
-                      className="justify-start"
-                    />
-                    <div className="text-sm">
-                      <div className="flex items-center gap-1">
-                        {[...Array(5)].map((_, i) => (
-                          <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                        ))}
-                      </div>
-                      <p className="text-muted-foreground">
-                        <span className="font-semibold text-foreground">4.9/5</span>{" "}
-                        {t("from")} 2,000+ {t("reviews")}
-                      </p>
-                    </div>
-                  </motion.div>
+                  {/*<motion.div*/}
+                  {/*  initial={{ opacity: 0, y: 20 }}*/}
+                  {/*  whileInView={{ opacity: 1, y: 0 }}*/}
+                  {/*  viewport={{ once: true }}*/}
+                  {/*  transition={{ delay: 0.3 }}*/}
+                  {/*  className="flex items-center gap-4 pt-4"*/}
+                  {/*>*/}
+                    {/*<AvatarCircles*/}
+                    {/*  numPeople={500000}*/}
+                    {/*  avatarUrls={avatarUrls}*/}
+                    {/*  className="justify-start"*/}
+                    {/*/>*/}
+                    {/*<div className="text-sm">*/}
+                    {/*  <div className="flex items-center gap-1">*/}
+                    {/*    {[...Array(5)].map((_, i) => (*/}
+                    {/*      <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />*/}
+                    {/*    ))}*/}
+                    {/*  </div>*/}
+                    {/*  <p className="text-muted-foreground">*/}
+                    {/*    <span className="font-semibold text-foreground">4.9/5</span>{" "}*/}
+                    {/*    {t("from")} 2,000+ {t("reviews")}*/}
+                    {/*  </p>*/}
+                    {/*</div>*/}
+                  {/*</motion.div>*/}
                 </div>
 
                 {/* 右侧: 预览卡片 */}
@@ -265,45 +265,45 @@ export function CTASection() {
             </motion.div>
           </BlurFade>
 
-          {/* 评价 Marquee */}
-          <BlurFade delay={0.2} inView>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mt-12"
-            >
-              <div className="text-center mb-6">
-                <h3 className="text-xl font-semibold mb-2">{t("testimonials.title")}</h3>
-                <p className="text-sm text-muted-foreground">{t("testimonials.subtitle")}</p>
-              </div>
+          {/*/!* 评价 Marquee *!/*/}
+          {/*<BlurFade delay={0.2} inView>*/}
+          {/*  <motion.div*/}
+          {/*    initial={{ opacity: 0, y: 20 }}*/}
+          {/*    whileInView={{ opacity: 1, y: 0 }}*/}
+          {/*    viewport={{ once: true }}*/}
+          {/*    className="mt-12"*/}
+          {/*  >*/}
+          {/*    <div className="text-center mb-6">*/}
+          {/*      <h3 className="text-xl font-semibold mb-2">{t("testimonials.title")}</h3>*/}
+          {/*      <p className="text-sm text-muted-foreground">{t("testimonials.subtitle")}</p>*/}
+          {/*    </div>*/}
 
-              <Marquee pauseOnHover className="[--duration:30s]">
-                {testimonials.map((testimonial, index) => (
-                  <motion.div
-                    key={index}
-                    whileHover={{ scale: 1.02 }}
-                    className="w-80 mx-4 p-6 rounded-2xl border border-border bg-background/50 backdrop-blur-sm hover:shadow-lg transition-all cursor-pointer"
-                  >
-                    <div className="flex items-center gap-1 mb-3">
-                      {[...Array(testimonial.rating)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />
-                      ))}
-                    </div>
-                    <Quote className="h-8 w-8 text-muted-foreground/30 mb-2" />
-                    <p className="text-sm mb-4 italic">"{testimonial.content}"</p>
-                    <div className="flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500" />
-                      <div>
-                        <p className="text-sm font-medium">{testimonial.author}</p>
-                        <p className="text-xs text-muted-foreground">{testimonial.role}</p>
-                      </div>
-                    </div>
-                  </motion.div>
-                ))}
-              </Marquee>
-            </motion.div>
-          </BlurFade>
+          {/*    <Marquee pauseOnHover className="[--duration:30s]">*/}
+          {/*      {testimonials.map((testimonial, index) => (*/}
+          {/*        <motion.div*/}
+          {/*          key={index}*/}
+          {/*          whileHover={{ scale: 1.02 }}*/}
+          {/*          className="w-80 mx-4 p-6 rounded-2xl border border-border bg-background/50 backdrop-blur-sm hover:shadow-lg transition-all cursor-pointer"*/}
+          {/*        >*/}
+          {/*          <div className="flex items-center gap-1 mb-3">*/}
+          {/*            {[...Array(testimonial.rating)].map((_, i) => (*/}
+          {/*              <Star key={i} className="h-4 w-4 fill-yellow-400 text-yellow-400" />*/}
+          {/*            ))}*/}
+          {/*          </div>*/}
+          {/*          <Quote className="h-8 w-8 text-muted-foreground/30 mb-2" />*/}
+          {/*          <p className="text-sm mb-4 italic">"{testimonial.content}"</p>*/}
+          {/*          <div className="flex items-center gap-2">*/}
+          {/*            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500" />*/}
+          {/*            <div>*/}
+          {/*              <p className="text-sm font-medium">{testimonial.author}</p>*/}
+          {/*              <p className="text-xs text-muted-foreground">{testimonial.role}</p>*/}
+          {/*            </div>*/}
+          {/*          </div>*/}
+          {/*        </motion.div>*/}
+          {/*      ))}*/}
+          {/*    </Marquee>*/}
+          {/*  </motion.div>*/}
+          {/*</BlurFade>*/}
         </div>
       </div>
     </section>
